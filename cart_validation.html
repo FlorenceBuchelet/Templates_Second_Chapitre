@@ -12,8 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style type="text/css">
-
         img {
             border: none;
             -ms-interpolation-mode: bicubic;
@@ -44,7 +46,7 @@
         table.recap_table {
             font-family: 'Montserrat', 'Arial', sans-serif;
             color: #707070;
-            padding: 15px !important;
+            padding: 25px !important;
         }
 
         table.recap_table thead th {
@@ -67,7 +69,7 @@
             font-size: 18px;
             padding-top: 15px;
             font-weight: bold;
-            font-family: 'DinProBold', 'Arial', sans-serif;
+            font-family: 'Montserrat', 'Arial', sans-serif;
         }
 
         @media screen and (min-width: 640px) {
@@ -444,17 +446,20 @@
                                     <tr>
                                         <td>
                                             <h1 class="title"
-                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-weight: 900; color: #379489; text-align: center; font-size: 36px; line-height: 40px">
-                                                Votre reprise de livres est confirmée !
+                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-weight: 800; color: #379489; text-align: center; font-size: 36px; line-height: 40px">
+                                                Votre reprise de livres est confirmée&nbsp;!
                                             </h1>
                                             <table>
                                                 <tbody>
                                                     <tr>
                                                         <td width="20%">&nbsp;</td>
                                                         <td colspan="3" align="center"
-                                                            style="padding: 15px;background-color: #B9FDA2;font-family: 'Montserrat', Helvetica, serif;font-weight: 900;">
-                                                            <h2 style="margin: 0px;"><u>Librairie de dépôt</u> :
-                                                                {{store.name}}</h2>
+                                                            style="padding: 15px;background-color: #B9FDA2;">
+                                                            <h2
+                                                                style="margin: 0px; font-weight: 900; font-size:larger;">
+                                                                <u>Librairie de dépôt</u> :
+                                                                {{store.name}}
+                                                            </h2>
                                                             <p style="font-weight: normal; margin: 5px 0;">
                                                                 {{store.street}} -
                                                                 {{store.zipcode}} {{store.city}}</p>
@@ -463,8 +468,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p
-                                                style="font-family: 'DinProMedium', Helvetica, serif; font-size: 18px; margin-bottom: 30px; color:black">
+                                            <p style="font-size: 18px; margin-bottom: 30px; color:black">
                                                 Merci d’avoir fait appel à nous pour la vente de vos livres et, par la
                                                 même occasion, de faire un geste pour notre planète en leur offrant une
                                                 seconde lecture !</p>
@@ -477,44 +481,44 @@
                                                     <tr>
                                                         <td colspan="2">
                                                             <p
-                                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-size: 20px; font-weight: bold; color: #000;">
+                                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-size: large; font-weight: 900; font-size:larger; color: #000;">
                                                                 Récapitulatif de votre reprise n°{{cart_number}}
                                                             </p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th
-                                                            style="text-align: left; text-transform: uppercase; font-family: 'DinProBold', 'Arial', sans-serif; font-size: 16px; font-weight: 900; color: #707070">
+                                                            style="padding-block-end: 8px; text-align: left; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #707070">
                                                             Titre
                                                         </th>
                                                         <th
-                                                            style="text-align: right; text-transform: uppercase; font-family: 'DinProBold', 'Arial', sans-serif; font-size: 16px; font-weight: 900; color: #707070">
+                                                            style="padding-block-end: 8px;text-align: right; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #707070">
                                                             Prix
                                                         </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {% for book in books %}
+                                                    <!-- {% for book in books %} -->
                                                     <tr>
                                                         <td
-                                                            style="padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #707070; vertical-align: top; font-family: 'DinProRegular', 'Arial', sans-serif; color: #707070">
+                                                            style="padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #707070; vertical-align: top; color: #707070">
                                                             {{book.title}}
                                                         </td>
                                                         <td
-                                                            style="text-align: right; padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #707070; vertical-align: top; font-family: 'DinProRegular', 'Arial', sans-serif; color: #707070">
+                                                            style="text-align: right; padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #707070; vertical-align: top; color: #707070">
                                                             <span class="recap_price">{{book.price}}</span>
                                                             <span class="recap_currency">€</span>
                                                         </td>
-                                                        {% endfor %}
+                                                        <!-- {% endfor %} -->
                                                 </tbody>
                                                 <tfoot>
                                                     <tr>
                                                         <th
-                                                            style="text-align: left; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-family: 'DinProBold', 'Arial', sans-serif; font-size: 17px; font-weight: 900; color: #707070">
+                                                            style="text-align: left; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: 17px; font-weight: 700; color: #707070">
                                                             Total
                                                         </th>
                                                         <th
-                                                            style="text-align: right; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-family: 'DinProBold', 'Arial', sans-serif; font-size: 17px; font-weight: 900; color: #707070">
+                                                            style="text-align: right; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: 17px; font-weight: 700; color: #707070">
                                                             <span class="recap_price">{{total_price}}</span>
                                                             <span class="recap_currency">€</span>
                                                         </th>
@@ -539,7 +543,7 @@
                                                                 style="height: 90px; width: 222px; object-fit: contain; background-image: linear-gradient(#ffffff, #ffffff); background-color: #ffffff"
                                                                 width="222" height="90">
                                                             <p
-                                                                style="font-family: 'DinProBold', 'Arial', sans-serif; color: black;
+                                                                style="color: black;
                                                         font-size: 14px; display: block; text-align: center; padding: 10px 5px 0 5px; margin: 0">
                                                                 {{cart_number}}
                                                             </p>
@@ -554,12 +558,12 @@
                                                                         <td width="248" height="108" align="center"
                                                                             style="width: 248px; height: 108px; vertical-align: middle; text-align: center">
                                                                             <h3
-                                                                                style="font-family: 'DinProBold', 'Arial', sans-serif; font-size: 24px; font-weight: 700;
-                                                                color: white; text-align: center; border:0;margin: auto; line-height: 26px; max-width: 80%">
-                                                                                Offre de reprise valable jusqu'au
+                                                                                style="font-size: 24px; font-weight: 650;
+                                                                color: white; text-align: center; border:0;margin: auto; max-width: 80%; font-family: 'Barlow Condensed', Arial, sans-serif; ">
+                                                                                Offre de reprise valable&nbsp;jusqu'au
                                                                                 {{end_validity_date}}
                                                                                 <span
-                                                                                    style="font-family: 'DinProRegular', 'Arial', sans-serif; font-style: italic; font-size: 16px; font-weight: 300;">
+                                                                                    style="font-style: italic; font-size: 16px; font-weight: 300;">
                                                                                     (1)
                                                                                 </span>
                                                                             </h3>
@@ -571,8 +575,8 @@
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2"
-                                                            style="font-family: 'DinProMedium', Helvetica, serif; font-weight: 400; margin: 0; padding: 20px 0 10px 0;
-                                                        font-size: 14px; line-height: 18px; font-style: italic; color: #1D1E1B; text-align: start;">
+                                                            style="font-weight: 400; margin: 0; padding: 20px 0 10px 0;
+                                                        font-size: 14px; line-height: 18px; font-style: italic; color: #1D1E1B; text-align: start; font-size: small;">
                                                             <table>
                                                                 <tr>
                                                                     <td style="vertical-align: top;">(1)</td>
@@ -622,13 +626,12 @@
                     </table>
 
 
-                    <!-- "Comment emballer vos livres" jusque FAQ -->
+                    <!-- "Comment emballer vos livres" -->
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="explanations"
                         style="background-color: #F3F3F3; width: 100%">
                         <tr class="explanations-help">
-                            <td colspan="3" align="center"
-                                style="padding-top: 40px; padding-bottom:0; font-family: 'DinProMedium', Helvetica, serif; color: #1D1E1B;">
-                                <h3 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 900;
+                            <td colspan="3" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
+                                <h3 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 800;
 										color: #379489; text-align: center">
                                     Comment emballer vos livres ?*
                                 </h3>
@@ -642,7 +645,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-family: 'DinProMedium', Helvetica, serif; font-size: 17px; max-width: 100%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 100%; margin: auto; color: black;">
                                     1 reprise = 1 colis<br><span style="color: #ed2626">20 livres max. par colis </span>
                                 </p>
                             </td>
@@ -652,7 +655,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-family: 'DinProMedium', Helvetica, serif; font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 80%; margin: auto; color: black;">
                                     Protégez bien vos livres dans un colis solide et adapté
                                 </p>
                             </td>
@@ -660,8 +663,7 @@
                                 <img src="https://www.images-chapitre.com/babel/images/adhesif.png" alt="Ruban adhésif"
                                     style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
                                     width="88" height="88" border="0">
-                                <p
-                                    style="font-family: 'DinProMedium', Helvetica, serif; font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                <p style="font-size: 17px; max-width: 80%; margin: auto; color: black;">
                                     Fermez le colis avec du ruban adhésif
                                 </p>
                             </td>
@@ -673,7 +675,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-family: 'DinProMedium', Helvetica, serif; font-size: 17px; max-width: 100%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 100%; margin: auto; color: black;">
                                     Transportez votre colis dans la librairie de votre choix
                                 </p>
                             </td>
@@ -684,7 +686,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-family: 'DinProMedium', Helvetica, serif; font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 80%; margin: auto; color: black;">
                                     Présentez votre code-barres de reprise à un libraire
                                 </p>
                             </td>
@@ -692,28 +694,26 @@
                                 <img src="https://www.images-chapitre.com/babel/images/ba.png" alt="bon d'achat"
                                     style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
                                     width="88" height="88" border="0">
-                                <p
-                                    style="font-family: 'DinProMedium', Helvetica, serif; font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                <p style="font-size: 17px; max-width: 80%; margin: auto; color: black;">
                                     Recevez votre bon d’achat et faites-vous plaisir !
                                 </p>
                             </td>
                         </tr>
                         <tr class="explanations-help">
-                            <td colspan="3" align="center"
-                                style="padding-top: 40px; padding-bottom:0; font-family: 'DinProMedium', Helvetica, serif; color: #1D1E1B;">
-                                <h5 style="font-family: 'DinProMedium', Helvetica, serif; font-size: 15px; max-width: 80%; margin: auto;
-										color: #707070; text-align: center; padding: 0 0 20px 0;">
+                            <td colspan="3" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
+                                <h5 style="font-size: 15px; max-width: 80%; margin: auto;
+										color: #707070; text-align: center; padding: 0 0 20px 0; font-weight: 400;">
                                     *&nbsp;Veuillez noter que le libraire se réserve le droit de refuser tout colis dont
                                     l'emballage ne garantit pas une protection suffisante des livres expédiés.
                                 </h5>
                             </td>
                         </tr>
 
-
+                        <!-- F.A.Q -->
                         <tr class="explanations-help">
                             <td colspan="3" align="center"
-                                style="background-color: #fff; padding-top: 40px; padding-bottom:0; font-family: 'DinProMedium', Helvetica, serif; color: #1D1E1B;">
-                                <h3 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 900;
+                                style="background-color: #fff; padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
+                                <h3 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 800;
                                         color: #379489; text-align: center">
                                     Besoin d'aide ?
                                 </h3>
@@ -734,24 +734,21 @@
                             </td>
                         </tr>
                         <tr>
-                            <!--                        <td></td>-->
-                            <td colspan="3" align="center"
-                                style="height: 50px;color:white; padding: 30px 0 40px 0; background-color: #fff;"
+                            <td colspan="3" align="center" style="height: 50px;color:white; padding: 0px 0 20px 0; background-color: #fff;"
                                 class="faq-button">
                                 <div>
-                                    <!-- background: #379489; width: 80px; margin: auto; padding: 10px 20px 10px 20px; -->
                                     <a href="https://reprise.secondelecture.com/app/faq"
                                         style="text-align: center; display: inline-block;
                                             font-family: 'ui-monospace', serif; font-size: 20px; font-weight: 900; color:white; text-decoration: none;">
-                                        <!--                    <img src="https://www.images-chapitre.com/babel/images/FAQ.png" alt="FAQ"-->
-                                        <!--                         style="vertical-align: middle; width: 20px; height: 20px; object-fit: contain; border:0; margin-bottom: 3px;"-->
-                                        <!--                         width="20" height="20" border="0">-->
-                                        <!--                    F.A.Q-->
-                                        <img src="https://www.images-chapitre.com/babel/images/FAQ-block.png" alt="FAQ">
                                     </a>
+                                    <p
+                                        style="background-color: #379489; padding: 0.7rem; font-weight: 800; text-align: center; font-size: large; ">
+                                        <span
+                                            style="display: inline-block; border: 2px solid; border-radius: 50%; font-weight: 700; font-size: small; text-align: center; width: 1rem; height: 1rem; line-height: 1rem;">?</span>
+                                            &nbsp;F.A.Q
+                                    </p>
                                 </div>
                             </td>
-                            <!--                        <td></td>-->
                         </tr>
                     </table>
 
@@ -759,7 +756,7 @@
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="socialNetworks">
                         <tbody>
                             <tr align="center" style="width: 100%;">
-                                <td align="center" width="120" style="width: 100%; padding-top: 24px;">
+                                <td align="center" width="120" style="width: 100%; padding-top: 30px;">
                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                         <tbody>
                                             <tr align="center">
@@ -767,14 +764,14 @@
 
                                                     <a href="https://reprise.secondelecture.com/disclaimer"
                                                         target="_blank"
-                                                        style="font-family: 'DinProRegular', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
+                                                        style="font-family: 'Barlow Condensed', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
                                                         Mentions légales
                                                     </a>
 
                                                     <span class="hidden">&nbsp;</span>
 
                                                     <a href="https://reprise.secondelecture.com/cgua" target="_blank"
-                                                        style="font-family: 'DinProRegular', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
+                                                        style="font-family: 'Barlow Condensed', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
                                                         CGUA
                                                     </a>
 
@@ -782,7 +779,7 @@
 
                                                     <a href="https://reprise.secondelecture.com/terms"
                                                         class="customButton" target="_blank"
-                                                        style="font-family: 'DinProRegular', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
+                                                        style="font-family: 'Barlow Condensed', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
                                                         Données personnelles
                                                     </a>
                                                 </td>
@@ -802,7 +799,7 @@
                                     <tr>
                                         <td>
                                             <p
-                                                style="margin: 0; font-family: 'DinProRegular', Arial, sans-serif; color: #707070; font-size: 12px; line-height: 16px;">
+                                                style="margin: 0; color: #707070; font-size: 12px; line-height: 16px; font-family: 'Barlow Condensed', Arial, sans-serif;">
                                                 NOSOLI 72 est responsable de traitement du site de revente de livres
                                                 d’occasion. La base légale de ce traitement est le respect d’une
                                                 obligation
@@ -814,7 +811,7 @@
                                                 10 ans à partir de leur collecte.
                                             </p>
                                             <p
-                                                style="margin: 16px 0 0 0; font-family: 'DinProRegular', Arial, sans-serif; color: #707070; font-size: 12px; line-height: 16px;">
+                                                style="margin: 16px 0 0 0; font-family: 'Barlow Condensed', Arial, sans-serif; color: #707070; font-size: 12px; line-height: 16px;">
                                                 En application de la loi Informatique et
                                                 Libertés n°78-17 du 06/01/1978 modifiée et le Règlement Européen Général
                                                 2016/679 du 27/04/2016 sur la protection des données, vous disposez d’un
@@ -827,7 +824,7 @@
                                                 auprès de la CNIL.
                                             </p>
                                             <p
-                                                style="margin: 16px 0 0 0; font-family: 'DinProRegular', Arial, sans-serif; color: #707070; font-size: 12px; line-height: 16px;">
+                                                style="margin: 16px 0 0 0; font-family: 'Barlow Condensed', Arial, sans-serif; color: #707070; font-size: 12px; line-height: 16px;">
                                                 Pour plus d’information sur la signification de vos
                                                 droits et sur l’introduction d’une réclamation, vous pouvez consulter le
                                                 site de la CNIL.
