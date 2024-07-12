@@ -8,10 +8,11 @@
     <meta name="theme-color" content="#379489">
     <title>Nosoli</title>
     <link rel="stylesheet" href="https://sechapwb.secondelecture.com/css/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style type="text/css">
-        @media screen {
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
-        }
 
         img {
             border: none;
@@ -47,7 +48,7 @@
         }
 
         table.recap_table thead th {
-            font-family: 'Montserrat-ExtraBold', 'Arial', sans-serif;
+            font-family: 'Montserrat', 'Arial', sans-serif;
             font-size: 18px;
             font-weight: 900;
         }
@@ -443,7 +444,7 @@
                                     <tr>
                                         <td>
                                             <h1 class="title"
-                                                style="font-family: 'Montserrat-ExtraBold', Helvetica, serif; margin: 0 0 30px 0; font-weight: 900; color: #379489; text-align: center; font-size: 36px; line-height: 40px">
+                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-weight: 900; color: #379489; text-align: center; font-size: 36px; line-height: 40px">
                                                 Votre reprise de livres est confirmée !
                                             </h1>
                                             <table>
@@ -451,7 +452,7 @@
                                                     <tr>
                                                         <td width="20%">&nbsp;</td>
                                                         <td colspan="3" align="center"
-                                                            style="padding: 15px;background-color: #B9FDA2;font-family: 'Montserrat-ExtraBold', Helvetica, serif;font-weight: 900;">
+                                                            style="padding: 15px;background-color: #B9FDA2;font-family: 'Montserrat', Helvetica, serif;font-weight: 900;">
                                                             <h2 style="margin: 0px;"><u>Librairie de dépôt</u> :
                                                                 {{store.name}}</h2>
                                                             <p style="font-weight: normal; margin: 5px 0;">
@@ -476,7 +477,7 @@
                                                     <tr>
                                                         <td colspan="2">
                                                             <p
-                                                                style="font-family: 'Montserrat-ExtraBold', Helvetica, serif; margin: 0 0 30px 0; font-size: 20px; font-weight: bold; color: #000;">
+                                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-size: 20px; font-weight: bold; color: #000;">
                                                                 Récapitulatif de votre reprise n°{{cart_number}}
                                                             </p>
                                                         </td>
@@ -570,23 +571,42 @@
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2"
-                                                        style="font-family: 'DinProMedium', Helvetica, serif; font-weight: 400; margin: 0; padding: 20px 0 10px 0;
+                                                            style="font-family: 'DinProMedium', Helvetica, serif; font-weight: 400; margin: 0; padding: 20px 0 10px 0;
                                                         font-size: 14px; line-height: 18px; font-style: italic; color: #1D1E1B; text-align: start;">
-                                                        <table>
-                                                            <tr>
-                                                                <td style="vertical-align: top;">(1)</td>
-                                                                <td>
-                                                                    <ul style="list-style-type: circle; margin: 0; padding-left: 20px;">
-                                                                        <li>Le Bon d'achat, dont la valeur est fixée automatiquement par l'application, est utilisable en une seule fois dans la librairie dans laquelle la reprise de livres d'occasion a été effectuée, pendant 2 mois à compter de son activation, en France Métropolitaine uniquement.</li>
-                                                                        <li>Le Bon d'achat sera utilisable à partir d'un minimum d'achat correspondant à la valeur du Bon d'achat.</li>
-                                                                        <li>Le Bon d'achat n'est pas sécable, ni remboursable, ni revendable, ni échangeable contre des espèces.</li>
-                                                                        <li>Le bon de reprise pour procéder au dépôt des livres en point de vente du Partenaire est valable pour une durée de 7 jours calendaires. Passé ce délai, l’Offre de reprise ne sera plus valable et le Vendeur devra recommencer la préparation de son panier de Reprise.</li>
-                                                                    </ul>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    
+                                                            <table>
+                                                                <tr>
+                                                                    <td style="vertical-align: top;">(1)</td>
+                                                                    <td>
+                                                                        <ul
+                                                                            style="list-style-type: circle; margin: 0; padding-left: 20px;">
+                                                                            <li>Le Bon d'achat, dont la valeur est fixée
+                                                                                automatiquement par l'application, est
+                                                                                utilisable en une seule fois dans la
+                                                                                librairie dans laquelle la reprise de
+                                                                                livres d'occasion a été effectuée,
+                                                                                pendant 2 mois à compter de son
+                                                                                activation, en France Métropolitaine
+                                                                                uniquement.</li>
+                                                                            <li>Le Bon d'achat sera utilisable à partir
+                                                                                d'un minimum d'achat correspondant à la
+                                                                                valeur du Bon d'achat.</li>
+                                                                            <li>Le Bon d'achat n'est pas sécable, ni
+                                                                                remboursable, ni revendable, ni
+                                                                                échangeable contre des espèces.</li>
+                                                                            <li>Le bon de reprise pour procéder au dépôt
+                                                                                des livres en point de vente du
+                                                                                Partenaire est valable pour une durée de
+                                                                                7 jours calendaires. Passé ce délai,
+                                                                                l’Offre de reprise ne sera plus valable
+                                                                                et le Vendeur devra recommencer la
+                                                                                préparation de son panier de Reprise.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+
 
 
                                                     </tr>
@@ -693,7 +713,7 @@
                         <tr class="explanations-help">
                             <td colspan="3" align="center"
                                 style="background-color: #fff; padding-top: 40px; padding-bottom:0; font-family: 'DinProMedium', Helvetica, serif; color: #1D1E1B;">
-                                <h3 style="font-family: 'Montserrat-ExtraBold', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 900;
+                                <h3 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 900;
                                         color: #379489; text-align: center">
                                     Besoin d'aide ?
                                 </h3>
@@ -715,7 +735,8 @@
                         </tr>
                         <tr>
                             <!--                        <td></td>-->
-                            <td colspan="3" align="center" style="height: 50px;color:white; padding: 30px 0 40px 0; background-color: #fff;"
+                            <td colspan="3" align="center"
+                                style="height: 50px;color:white; padding: 30px 0 40px 0; background-color: #fff;"
                                 class="faq-button">
                                 <div>
                                     <!-- background: #379489; width: 80px; margin: auto; padding: 10px 20px 10px 20px; -->
