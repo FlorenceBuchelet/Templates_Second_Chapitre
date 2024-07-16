@@ -23,7 +23,7 @@
         }
 
         body {
-            background-color: #fff;
+            background-color: #00211E;
             font-family: 'Montserrat', 'Arial', sans-serif;
             -webkit-font-smoothing: antialiased;
             margin: 0;
@@ -86,6 +86,7 @@
         }
 
         table.table_barcode .barcode_td {
+            background-color: #fff;
             display: block;
             width: 100% !important;
             height: auto !important;
@@ -203,7 +204,7 @@
         ------------------------------------- */
 
         .body {
-            background-color: #fff;
+            background-color: #00211E;
             width: 100%;
         }
 
@@ -230,7 +231,7 @@
             HEADER, FOOTER, MAIN
         ------------------------------------- */
         .main {
-            background: #ffffff;
+            background: #00211E;
             border-radius: 3px;
             width: 100%;
         }
@@ -422,7 +423,7 @@
                     </a>
                 </td>
             </tr>
-            <tr style="background-color: #00221E">
+            <tr style="background-color: #B9FDA2">
                 <td> &nbsp;</td>
             </tr>
         </tbody>
@@ -445,7 +446,7 @@
                                     <tr>
                                         <td>
                                             <h1 class="title"
-                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-weight: 800; color: #379489; text-align: center; font-size: 36px; line-height: 40px">
+                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-weight: 800; color: #fff; text-align: center; font-size: 36px; line-height: 40px">
                                                 Votre reprise de livres est confirmée&nbsp;!
                                             </h1>
                                             <table>
@@ -453,7 +454,7 @@
                                                     <tr>
                                                         <td width="20%">&nbsp;</td>
                                                         <td colspan="3" align="center"
-                                                            style="padding: 15px;background-color: #B9FDA2;">
+                                                            style="padding: 15px;background-color: #fff;">
                                                             <h2
                                                                 style="margin: 0px; font-weight: 900; font-size:larger;">
                                                                 <u>Librairie de dépôt</u> :
@@ -467,7 +468,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p style="font-size: 18px; margin-bottom: 30px; color:black">
+                                            <p style="font-size: 18px; margin-bottom: 30px; color:#fff">
                                                 Merci d’avoir fait appel à nous pour la vente de vos livres et, par la
                                                 même occasion, de faire un geste pour notre planète en leur offrant une
                                                 seconde lecture !</p>
@@ -475,23 +476,23 @@
                                             <!-- Récapitulatif de reprise -->
                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation"
                                                 class="recap_table"
-                                                style="padding: 25px; background-color: #F3F3F3; width: 100%">
+                                                style="padding: 25px; background-color: #043430; width: 100%">
                                                 <thead>
                                                     <tr>
                                                         <td colspan="2">
                                                             <p
-                                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-size: large; font-weight: 900; font-size:larger; color: #000;">
+                                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-size: large; font-weight: 900; font-size:larger; color: #fff;">
                                                                 Récapitulatif de votre reprise n°{{cart_number}}
                                                             </p>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th
-                                                            style="padding-block-end: 8px; text-align: left; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #707070">
+                                                            style="padding-block-end: 8px; text-align: left; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #fff">
                                                             Titre
                                                         </th>
                                                         <th
-                                                            style="padding-block-end: 8px;text-align: right; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #707070">
+                                                            style="padding-block-end: 8px;text-align: right; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #fff">
                                                             Prix
                                                         </th>
                                                     </tr>
@@ -500,11 +501,11 @@
                                                     <!-- {% for book in books %} -->
                                                     <tr>
                                                         <td
-                                                            style="padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #707070; vertical-align: top; color: #707070">
+                                                            style="padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #fff; vertical-align: top; color: #fff">
                                                             {{book.title}}
                                                         </td>
                                                         <td
-                                                            style="text-align: right; padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #707070; vertical-align: top; color: #707070">
+                                                            style="text-align: right; padding: 5px 0px; font-size: 15px; border-bottom: 1px solid #fff; vertical-align: top; color: #fff">
                                                             <span class="recap_price">{{book.price}}</span>
                                                             <span class="recap_currency">€</span>
                                                         </td>
@@ -513,11 +514,11 @@
                                                 <tfoot>
                                                     <tr>
                                                         <th
-                                                            style="text-align: left; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: 17px; font-weight: 700; color: #707070">
+                                                            style="text-align: left; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: 17px; font-weight: 700; color: #fff">
                                                             Total
                                                         </th>
                                                         <th
-                                                            style="text-align: right; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: 17px; font-weight: 700; color: #707070">
+                                                            style="text-align: right; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: 17px; font-weight: 700; color: #fff">
                                                             <span class="recap_price">{{total_price}}</span>
                                                             <span class="recap_currency">€</span>
                                                         </th>
@@ -575,7 +576,7 @@
                                                     <tr>
                                                         <td colspan="2"
                                                             style="font-weight: 400; margin: 0; padding: 20px 0 10px 0;
-                                                        font-size: 14px; line-height: 18px; font-style: italic; color: #1D1E1B; text-align: start; font-size: small;">
+                                                        font-size: 14px; line-height: 18px; font-style: italic; color: #fff; text-align: start; font-size: small;">
                                                             <table>
                                                                 <tr>
                                                                     <td style="vertical-align: top;">(1)</td>
@@ -627,11 +628,11 @@
 
                     <!-- "Comment emballer vos livres" -->
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="explanations"
-                        style="background-color: #F3F3F3; width: 100%">
+                        style="background-color: #043430; width: 100%">
                         <tr class="explanations-help">
                             <td colspan="3" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
                                 <h3 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 800;
-										color: #379489; text-align: center">
+										color: #fff; text-align: center">
                                     Comment emballer vos livres&nbsp;?&nbsp;*
                                 </h3>
                             </td>
@@ -644,7 +645,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-size: 17px; max-width: 100%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 100%; margin: auto; color: #fff;">
                                     1 reprise = 1 colis<br><span style="color: red">20 livres max. par colis </span>
                                 </p>
                             </td>
@@ -654,7 +655,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 80%; margin: auto; color: #fff;">
                                     Protégez bien vos livres dans un colis solide et adapté
                                 </p>
                             </td>
@@ -662,7 +663,7 @@
                                 <img src="https://www.images-chapitre.com/babel/images/adhesif.png" alt="Ruban adhésif"
                                     style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
                                     width="88" height="88" border="0">
-                                <p style="font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                <p style="font-size: 17px; max-width: 80%; margin: auto; color: #fff;">
                                     Fermez le colis avec du ruban adhésif
                                 </p>
                             </td>
@@ -674,7 +675,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-size: 17px; max-width: 100%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 100%; margin: auto; color: #fff;">
                                     Transportez votre colis dans la librairie de votre choix
                                 </p>
                             </td>
@@ -685,7 +686,7 @@
                                     width="88" height="88" border="0">
 
                                 <p
-                                    style="text-align: center; font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                    style="text-align: center; font-size: 17px; max-width: 80%; margin: auto; color: #fff;">
                                     Présentez votre code-barres de reprise à un libraire
                                 </p>
                             </td>
@@ -693,7 +694,7 @@
                                 <img src="https://www.images-chapitre.com/babel/images/ba.png" alt="bon d'achat"
                                     style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
                                     width="88" height="88" border="0">
-                                <p style="font-size: 17px; max-width: 80%; margin: auto; color: black;">
+                                <p style="font-size: 17px; max-width: 80%; margin: auto; color: #fff;">
                                     Recevez votre bon d’achat et faites-vous plaisir !
                                 </p>
                             </td>
@@ -701,7 +702,7 @@
                         <tr class="explanations-help">
                             <td colspan="3" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
                                 <h5 style="font-size: 15px; max-width: 80%; margin: auto;
-										color: #707070; text-align: center; padding: 0 0 20px 0; font-weight: 400;">
+										color: #fff; text-align: center; padding: 0 0 20px 0; font-weight: 400;">
                                     *&nbsp;Veuillez noter que le libraire se réserve le droit de refuser tout colis dont
                                     l'emballage ne garantit pas une protection suffisante des livres expédiés.
                                 </h5>
@@ -709,31 +710,31 @@
                         </tr>
 
                         <!-- F.A.Q -->
-                        <tr class="explanations-help" style="background-color: #fff;">
+                        <tr class="explanations-help" style="background-color: #00211E;">
                             <td colspan="3" align="center"
                                 style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
                                 <h3 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 800;
-                                        color: #379489; text-align: center">
+                                        color: #fff; text-align: center">
                                     Besoin d'aide ?
                                 </h3>
                                 <p class="contact"
-                                    style="font-size: 18px; line-height: 22px; text-align: center; padding: 0 0 10px 0;">
+                                    style="font-size: 18px; line-height: 22px; text-align: center; padding: 0 0 10px 0; color: #fff;">
                                     Contactez-nous du lundi au vendredi de 9h30 à 12h30 : <br>
                                     Par téléphone au
                                     <a class="hover-text-green" href="tel:+33178900990" target="_blank"
-                                        style="color: #1D1E1B; text-decoration: none;">
+                                        style="color: #fff; text-decoration: none;">
                                         01 78 90 09 90
                                     </a>
                                     ou par mail à
                                     <a class="hover-text-green" href="mailto:relation_client@chapitre.com"
-                                        target="_blank" style="color: #1D1E1B; text-decoration: none;">
+                                        target="_blank" style="color: #fff; text-decoration: none;">
                                         relation_client@chapitre.com
                                     </a>
                                 </p>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="3" align="center" style="height: 50px;color:white; padding: 0px 0 20px 0; background-color: #fff;"
+                            <td colspan="3" align="center" style="height: 50px;color:white; padding: 0px 0 20px 0; background-color: #00211E;"
                                 class="faq-button">
                                 <div>
                                     <a href="https://reprise.secondelecture.com/app/faq"
@@ -799,7 +800,7 @@
                                     <tr>
                                         <td>
                                             <p
-                                                style="margin: 0; color: #707070; font-size: 12px; line-height: 16px; font-family: 'Barlow Condensed', Arial, sans-serif;">
+                                                style="margin: 0; color: #fff; font-size: 12px; line-height: 16px; font-family: 'Barlow Condensed', Arial, sans-serif;">
                                                 NOSOLI 72 est responsable de traitement du site de revente de livres
                                                 d’occasion. La base légale de ce traitement est le respect d’une
                                                 obligation
@@ -811,7 +812,7 @@
                                                 10 ans à partir de leur collecte.
                                             </p>
                                             <p
-                                                style="margin: 16px 0 0 0; font-family: 'Barlow Condensed', Arial, sans-serif; color: #707070; font-size: 12px; line-height: 16px;">
+                                                style="margin: 16px 0 0 0; font-family: 'Barlow Condensed', Arial, sans-serif; color: #fff; font-size: 12px; line-height: 16px;">
                                                 En application de la loi Informatique et
                                                 Libertés n°78-17 du 06/01/1978 modifiée et le Règlement Européen Général
                                                 2016/679 du 27/04/2016 sur la protection des données, vous disposez d’un
@@ -824,7 +825,7 @@
                                                 auprès de la CNIL.
                                             </p>
                                             <p
-                                                style="margin: 16px 0 0 0; font-family: 'Barlow Condensed', Arial, sans-serif; color: #707070; font-size: 12px; line-height: 16px;">
+                                                style="margin: 16px 0 0 0; font-family: 'Barlow Condensed', Arial, sans-serif; color: #fff; font-size: 12px; line-height: 16px;">
                                                 Pour plus d’information sur la signification de vos
                                                 droits et sur l’introduction d’une réclamation, vous pouvez consulter le
                                                 site de la CNIL.
