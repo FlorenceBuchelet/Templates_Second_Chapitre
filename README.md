@@ -1,18 +1,21 @@
 # Questions
 ## cart_validation.html
 
-- Il y a deux disclaimers différents, complémentaires, dans le fichier Flux 1 et dans le mail préparé par Anthony : quelle est la bonne version ? (en attendant, j'ai laissé les deux vu qu'ils ne se contredisaient pas)
-
-## cart_validation_dark.html
-
-- Images en blanc (ex. https://www.images-chapitre.com/babel/images/ba.png)
+- Il y a deux disclaimers différents, complémentaires, dans le fichier Flux 1 et dans le mail préparé par Anthony (hello Anthony!) : quelle est la bonne version ? (en attendant, j'ai laissé les deux vu qu'ils ne se contredisaient pas mais ça commence à faire un très long paragraphe)
 
 ## order_validation.html
 
 - Le disclaimer n'était pas bon non plus.
 
+## Pages webs
+- Ok j'ai les pages en ligne mais je n'ai pas le code en lui-même, est-ce que ce serait possible d'avoir les fichiers html si ils existent ? Il y a vraiment beaucoup de déjà fait, ce serait bête de reprendre à zéro. Après si ça n'est pas possible je repars effectivement de zéro.
+- CGUA : Il y a un logo de menu en haut à droite, est-ce que cette navbar est fixe ou est-ce que je dois aussi l'intégrer à ce que je code ?
+- Est-ce que pour les pages webs je peux tabler sur un vrai HTML/CSS moderne ou est-ce que j'ai les mêmes limitations que pour les templates d'emails ?
 
-# Variales manquantes : 
+# Variables manquantes : 
+## cart_validation_dark.html
+- Images en blanc (ex. https://www.images-chapitre.com/babel/images/ba.png)
+
 ## cart_validation.html & cart_validation_dark.html
 - {{store.name}}
 - {{store.street}}
@@ -35,57 +38,5 @@
 - {{voucher.code}}
 - {{voucher.amount}} 
 
-```html
-
-                        <td
-                            style="padding: 15px; padding-bottom: 15px; font-size: 17px; vertical-align: top; font-family: 'Barlow Condensed', 'Arial', sans-serif;">
-                            <span
-                                style="font-size: 20px; font-weight: bold; color: #000;line-height: 40px;">N°
-                                de reprise : </span> {{order_number}}
-                            <br>
-                            <span
-                                style="font-size: 20px;font-weight: bold;color: #000;line-height: 40px;">Valable
-                                à : </span> {{store.name}}
-                            <br>
-                            <span
-                                style="font-size: 20px; font-weight: bold; color: #000;line-height: 40px;">Jusqu'au
-                                : </span> {{voucher.expired_at}}
-                            <br>
-                            <span
-                                style="font-size: 20px; font-weight: bold; color: #000;line-height: 40px;">Code
-                                : </span> {{voucher.code}}
-                        </td>
-                        <td style="vertical-align:middle;background-color: #379489;"
-                            width="355" align="center">
-                            <table border="0" cellpadding="0" cellspacing="0"
-                                role="presentation">
-                                <tbody>
-                                    <tr>
-                                        <td width="248" height="174" align="center"
-                                            style="width: 248px; height: 108px; vertical-align: middle; text-align: center">
-                                            <h3 style="
-                                font-family: 'Barlow Condensed', 'Arial', sans-serif;
-                                font-size: 24px;
-                                font-weight: 700;
-                                color: white;
-                                text-align: center;
-                                border:0;
-                                margin: auto;
-                                line-height: 26px;
-                                max-width: 80%
-                                ">
-                                                {{voucher.amount}} €
-
-                                            </h3>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-</table>
-```
+# forgot_password.html
+- {{ reset_password_link }}
