@@ -46,7 +46,7 @@ afficher la source html
 @RenderBody()
 
 Clara : outils de test d'emails, qui est comment sont gérés les emails ?
-Lisa : 
+Lisa : fonts (remplacer dinpro ?)
 Valentine : Disclaimers.
 
 + remettre le code barres dans le mail avec le voucher
