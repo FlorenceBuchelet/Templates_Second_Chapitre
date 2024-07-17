@@ -1,11 +1,12 @@
 # Questions
 ## cart_validation.html
 
-- Il y a deux disclaimers différents, complémentaires, dans le fichier Flux 1 et dans le mail préparé par Anthony (hello Anthony!) : quelle est la bonne version ? (en attendant, j'ai laissé les deux vu qu'ils ne se contredisaient pas mais ça commence à faire un très long paragraphe)
+- Il y a deux disclaimers différents, complémentaires, dans le fichier Flux 1 et dans le mail préparé par Anthony : quelle est la bonne version ? (en attendant, j'ai laissé les deux vu qu'ils ne se contredisaient pas mais ça commence à faire un très long paragraphe)
 
 ## order_validation.html
 
-- Le disclaimer n'était pas bon non plus.
+- Le disclaimer n'était pas bon non plus. (Valentine)
+- Pas le même contenu pour le second encadré : dans Flux 1, un code barre, dans le mail d'Anthony, la valeur du bon.
 
 ## Pages webs
 - Ok j'ai les pages en ligne mais je n'ai pas le code en lui-même, est-ce que ce serait possible d'avoir les fichiers html si ils existent ? Il y a vraiment beaucoup de déjà fait, ce serait bête de reprendre à zéro. Après si ça n'est pas possible je repars effectivement de zéro.
@@ -14,7 +15,7 @@
 
 # Variables manquantes : 
 ## cart_validation_dark.html
-- Images en blanc (ex. https://www.images-chapitre.com/babel/images/ba.png)
+- Images en blanc (ex. https://www.images-chapitre.com/babel/images/ba.png) (Lisa ?)
 
 ## cart_validation.html & cart_validation_dark.html
 - {{store.name}}
@@ -40,3 +41,12 @@
 
 # forgot_password.html
 - {{ reset_password_link }}
+
+afficher la source html
+@RenderBody()
+
+Clara : outils de test d'emails, qui est comment sont gérés les emails ?
+Lisa : 
+Valentine : Disclaimers.
+
++ remettre le code barres dans le mail avec le voucher

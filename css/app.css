@@ -1,0 +1,411 @@
+/* ---------------------------------------- Commun ---------------------------------------- */
+/* Register Fonts */
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url("../fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBoldItalic";
+    src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: url("../fonts/Montserrat-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+/* End register Fonts */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Monserrat, sans-serif;
+}
+
+
+/* Main padding */
+.main-padding {
+    padding-bottom: 7rem;
+}
+
+/* Header heading */
+
+.header-heading {
+    height: 10rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+
+
+.vertical-center {
+    top: 50%;
+    margin: 0;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.logo {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    width: 12rem;
+}
+
+.title {
+    height: 7rem;
+    color: #B9FDA2;
+    background-color: #379489;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Positionne le trait en dessous de la div */
+    width: 100%;
+    height: 5px; /* Épaisseur du trait */
+    background-color: #00211E;
+}
+
+    .title h1 {
+        margin-left: 2rem;
+    }
+
+
+/* Color */
+
+/* Color */
+.color-danger {
+    fill: red;
+}
+
+.color-success {
+    fill: #379489;
+    ;
+}
+
+/* ---------------------------------------- CDR ---------------------------------------- */
+/* Texte de "présentation" */
+.text {
+    padding: 2rem;
+}
+
+.rule {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rule-bold {
+    font-family: "MerriweatherBold", sans-serif;
+}
+
+.rule-list {
+    margin-left: -5vh;
+}
+
+    .rule-list li {
+        list-style: none;
+    }
+
+        .rule-list li::before {
+            content: "- ";
+        }
+
+.rule-bold {
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------- CGUA ---------------------------------------- */
+
+/* -- Dates -- */
+.dateMEP.selected .date-selector {
+    color: #379489;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    background-color: #F3F3F3;
+}
+
+.date-selector {
+    padding: 0;
+    margin: 0;
+    padding-left: 4vh;
+}
+
+.date-option {
+    padding-left: 2vh;
+    cursor: pointer;
+}
+
+#date-option:hover {
+    background-color: #c4c4c4;
+}
+
+.dateMEP {
+    height: 100%;
+    width: 100%;
+    color: #379489;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .dateMEP svg {
+        transform-origin: center;
+        padding-top: 1vh;
+        fill: #379489;
+        transform: rotate(270deg);
+    }
+
+    .dateMEP.selected svg {
+        padding-top: 1vh;
+    }
+
+/* -- Content -- */
+.cgua-content {
+    position: relative;
+    display: block;
+    border-top: 1px solid black;
+    margin: 2rem;
+    margin-top: 1rem;
+}
+
+/* Article */
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-head {
+    display: flex;
+    flex-direction: row;
+    color: #379489;
+    font-weight: bolder;
+    align-items: center;
+    font-size: medium;
+}
+
+    .article-head h4 {
+        padding-left: 1vh;
+    }
+
+.article-content {
+    display: none;
+}
+
+
+.article.active .article-content {
+    display: contents;
+    margin-top: 1rem;
+}
+
+.drop {
+    transform-origin: center;
+    transform: rotate(270deg);
+    fill: #379489;
+    transition: transform .4s ease-in-out;
+}
+
+.article.active .drop {
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+/* ---------------------------------------- CONTACT ---------------------------------------- */
+
+/* Group */
+.contact-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.contact-title {
+    padding: .3vh 4vh;
+    font-size: large;
+    color: #379489;
+    font-family: "MerriweatherBold", sans-serif;
+}
+
+/* Card whit bg gray */
+.contact-card {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4vh 0;
+}
+
+/* A Style */
+.card-button {
+    border: 0;
+    border-radius: 1rem;
+    background-color: #379489;
+    color: white;
+    padding: .7vh 2vh;
+}
+
+/* Card img */
+.card-image img {
+    margin: 0;
+    height: 8vh;
+    width: 8vh;
+}
+
+a, a:focus, a:active {
+    outline: none;
+    text-decoration: none;
+}
+/* Group Card Image + Button */
+.card-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    padding-bottom: 1vh;
+}
+/* ---------------------------------------- FAQ ---------------------------------------- */
+
+.faq-item {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    margin: 0 4vh;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    color: #379489;
+}
+
+.faq-responses {
+    display: none;
+}
+
+.faq.active .faq-responses {
+    display: contents;
+    font-size: small;
+}
+
+.faq.active .chevron {
+    transform: rotate(180deg);
+}
+
+.faq.active .faq-responses p {
+    padding: 0 4vh;
+    padding-bottom: 1rem;
+}
+
+.faq.active {
+    background-color: #F3F3F3;
+    margin-bottom: -0.8rem;
+}
+
+.faq-title {
+    align-self: flex-start;
+    font-family: "MerriweatherBold", sans-serif;
+}
+
+.faq-arrow {
+    align-self: flex-end;
+}
+
+.chevron {
+    transform: rotate(360deg);
+    fill: #379489;
+    transition: transform .4s ease-in-out;
+}
+
+/* ---------------------------------------- ML ---------------------------------------- */
+
+.ml-content {
+    margin: 2rem;
+}
+
+.title2 {
+    color: #379489;
+    font-weight: bold;
+    font-family: "MerriweatherBold", sans-serif;
+}
+/* Information section */
+
+.informations {
+    position: relative;
+    display: inline-block;
+    padding-bottom: -1.5rem;
+    margin-top: 1rem;
+}
+
+    .informations p {
+        padding-top: 0;
+        margin-bottom: -10px;
+    }
+
+.type {
+    font-family: "MerriweatherBold", sans-serif;
+}
+
+    .type::after {
+        content: " : ";
+    }
+/* ---------------------------------------- Partenaire ---------------------------------------- */
+
+/* Presentation */
+
+.part-content {
+    margin: 2vh;
+}
+
+.presentation {
+    display: block;
+}
+
+    .presentation p {
+        align-self: baseline;
+    }
+
+    .presentation .logo-part {
+        float: left;
+        padding-right: 2vh;
+        width: 20vh;
+    }
+
+.paraphe {
+    margin: 2vh 0;
+    margin-bottom: 1.3rem;
+    display: block;
+}
+
+/* ---------------------------------------- MEDIA Query ---------------------------------------- */
+
+
+@media(max-width:640px) {
+    .header-heading {
+        height: 5rem;
+    }
+
+    .logo {
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        width: 7rem;
+    }
+}
