@@ -46,7 +46,30 @@ afficher la source html
 @RenderBody()
 
 Clara : outils de test d'emails, qui est comment sont gérés les emails ?
-Lisa : fonts (remplacer dinpro ?)
+Lisa : fonts (remplacer dinpro ?), format mobile ?, 
 Valentine : Disclaimers.
 
 + remettre le code barres dans le mail avec le voucher
+
+1. réduire header et typo, tout en monteserrat
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+16. 
+17. 
+18. 
+19. 
+20. 
+21. 
+22. 
