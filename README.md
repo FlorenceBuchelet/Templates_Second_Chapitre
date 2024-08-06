@@ -6,16 +6,10 @@
 ## order_validation.html
 
 - Le disclaimer n'était pas bon non plus. (Valentine)
-- Pas le même contenu pour le second encadré : dans Flux 1, un code barre, dans le mail d'Anthony, la valeur du bon.
-
-## Pages webs
-- Ok j'ai les pages en ligne mais je n'ai pas le code en lui-même, est-ce que ce serait possible d'avoir les fichiers html si ils existent ? Il y a vraiment beaucoup de déjà fait, ce serait bête de reprendre à zéro. Après si ça n'est pas possible je repars effectivement de zéro.
-- CGUA : Il y a un logo de menu en haut à droite, est-ce que cette navbar est fixe ou est-ce que je dois aussi l'intégrer à ce que je code ?
-- Est-ce que pour les pages webs je peux tabler sur un vrai HTML/CSS moderne ou est-ce que j'ai les mêmes limitations que pour les templates d'emails ?
 
 # Variables manquantes : 
 ## cart_validation_dark.html
-- Images en blanc (ex. https://www.images-chapitre.com/babel/images/ba.png) (Lisa ?)
+- Images en blanc pour le dark mode : j'ai les assets mais pas de solution pour les limiter au dark mode.
 
 ## cart_validation.html & cart_validation_dark.html
 - {{store.name}}
@@ -46,31 +40,4 @@
 afficher la source html
 @RenderBody()
 
-Clara : outils de test d'emails, qui est comment sont gérés les emails ?
-Lisa : fonts (remplacer dinpro ?), format mobile ?, 
-Valentine : Disclaimers.
-
-+ remettre le code barres dans le mail avec le voucher
-
-1. réduire header et typo, tout en monteserrat
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
-11. 
-12. 
-13. 
-14. 
-15. 
-16. 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
+**Valentine** : Disclaimers.

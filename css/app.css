@@ -79,9 +79,6 @@ body {
         margin-left: 2rem;
     }
 
-
-/* Color */
-
 /* Color */
 .color-danger {
     fill: red;
@@ -240,10 +237,9 @@ body {
 /* Title */
 .contact-title {
     padding: .3vh 4vh;
-    font-size: large;
+    font-size: medium;
     color: #379489;
-/*     font-family: "MerriweatherBold", sans-serif;
- */}
+}
 
 /* Card whit bg gray */
 .contact-card {
