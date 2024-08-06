@@ -103,11 +103,18 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    & svg {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    & ul {
+        margin-block: 0.5rem;
+    }
 }
 
 .rule-bold {
-    font-family: "MerriweatherBold", sans-serif;
+    font-family: 'Montserrat-ExtraBold';
 }
 
 .rule-list {
@@ -121,10 +128,6 @@ body {
         .rule-list li::before {
             content: "- ";
         }
-
-.rule-bold {
-    font-weight: bold;
-}
 
 
 /* ---------------------------------------- CGUA ---------------------------------------- */
@@ -239,8 +242,8 @@ body {
     padding: .3vh 4vh;
     font-size: large;
     color: #379489;
-    font-family: "MerriweatherBold", sans-serif;
-}
+/*     font-family: "MerriweatherBold", sans-serif;
+ */}
 
 /* Card whit bg gray */
 .contact-card {
@@ -321,8 +324,8 @@ a, a:focus, a:active {
 
 .faq-title {
     align-self: flex-start;
-    font-family: "MerriweatherBold", sans-serif;
-}
+/*     font-family: "MerriweatherBold", sans-serif;
+ */}
 
 .faq-arrow {
     align-self: flex-end;
@@ -343,8 +346,8 @@ a, a:focus, a:active {
 .title2 {
     color: #379489;
     font-weight: bold;
-    font-family: "MerriweatherBold", sans-serif;
-}
+/*     font-family: "MerriweatherBold", sans-serif;
+ */}
 /* Information section */
 
 .informations {
@@ -360,8 +363,8 @@ a, a:focus, a:active {
     }
 
 .type {
-    font-family: "MerriweatherBold", sans-serif;
-}
+/*     font-family: "MerriweatherBold", sans-serif;
+ */}
 
     .type::after {
         content: " : ";

@@ -38,6 +38,7 @@
 - {{voucher.expired_at}}
 - {{voucher.code}}
 - {{voucher.amount}} 
+- {{cart_number}}
 
 # forgot_password.html
 - {{ reset_password_link }}
