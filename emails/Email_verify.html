@@ -20,8 +20,8 @@
         }
 
         body {
-            background-color: #fff;
             font-family: 'Montserrat', 'Arial', sans-serif;
+            background-color: #fff;
             -webkit-font-smoothing: antialiased;
             margin: 0;
             padding: 0;
@@ -41,13 +41,10 @@
         /** Table Recap **/
 
         table.recap_table {
-            font-family: 'Montserrat', 'Arial', sans-serif;
             color: #707070;
-            padding: 25px !important;
         }
 
         table.recap_table thead th {
-            font-family: 'Montserrat', 'Arial', sans-serif;
             font-size: 18px;
             font-weight: 900;
         }
@@ -66,21 +63,9 @@
             font-size: 18px;
             padding-top: 15px;
             font-weight: bold;
-            font-family: 'Montserrat', 'Arial', sans-serif;
-        }
-
-        @media screen and (min-width: 640px) {
-            table.recap_table {
-                padding: 25px !important;
-            }
         }
 
         /** Table BarCode **/
-
-        table.table_barcode {
-            padding: 0 0;
-            border-spacing: 10px 0;
-        }
 
         table.table_barcode .barcode_td {
             display: block;
@@ -98,25 +83,8 @@
             }
         }
 
-        @media (prefers-color-scheme: dark) {
-            table.table_barcode img {
-                background-color: #ffffff !important;
-            }
-
-            table.table_barcode p {
-                color: #000000 !important;
-            }
-        }
-
-        [data-ogsc] table.table_barcode img {
-            background-color: #ffffff !important;
-        }
-
-        [data-ogsc] table.table_barcode p {
-            color: #000000 !important;
-        }
-
         /** Table Explanations **/
+
         table.explanations .contact {
             max-width: 90%;
             margin: auto;
@@ -149,85 +117,35 @@
             }
         }
 
-        /** Table socialNetworks **/
-        table.socialNetworks td {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        table.socialNetworks td.socialNetworks_title {
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: 32px 0;
-            max-width: 90%;
-            margin: auto;
-        }
-
-        table.socialNetworks td a {
-            display: table-cell;
-            height: 100%;
-            vertical-align: middle;
-            text-decoration: none;
-        }
-
-        table.socialNetworks td a img {
-            width: 24px;
-            height: 24px;
-            margin-right: 5px;
-            border: 0;
-        }
-
-        @media screen and (min-width: 640px) {
-            table.socialNetworks td {
-                display: table-cell;
-                margin-bottom: 0;
-            }
-
-            table.socialNetworks td.socialNetworks_title {
-                padding: 32px 0;
-                max-width: 100%;
-            }
-        }
-
         table td {
             vertical-align: top;
         }
 
-
         /* -------------------------------------
             BODY & CONTAINER
-        ------------------------------------- */
-
-        .body {
-            background-color: #fff;
-            width: 100%;
-        }
-
-        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+    ------------------------------------- */
         .container {
             display: block;
             margin: 0 auto !important;
             /* makes it centered*/
-            max-width: 992px;
+            max-width: 100%;
             padding: 10px;
             width: 100%;
         }
 
-        /* This should also be a block element, so that it will fill 100% of the .container */
         .content {
             box-sizing: border-box;
             display: block;
             margin: 0 auto;
-            max-width: 992px;
+            max-width: 100%;
             padding: 10px;
         }
 
         /* -------------------------------------
             HEADER, FOOTER, MAIN
-        ------------------------------------- */
+            ------------------------------------- */
+
         .main {
-            background: #ffffff;
             border-radius: 3px;
             width: 100%;
         }
@@ -236,69 +154,16 @@
             padding: 20px 0 0 0;
         }
 
-        .wrapper {
-            /*box-sizing: border-box;*/
-            padding: 20px;
-        }
-
-        /* -------------------------------------
-            TYPOGRAPHY
-        ------------------------------------- */
-        .title {
-            font-size: 36px;
-            line-height: 40px;
-        }
-
-        .subtitle {
-            font-size: 24px;
-            line-height: 32px;
-        }
-
-        .p-reference {
-            font-size: 14px;
-            line-height: 20px;
-        }
-
-        .paragraph {
-            font-size: 16px;
-            line-height: 24px;
-        }
-
         .barcode {
             width: 100%;
             height: 90px;
             object-fit: contain;
         }
 
-        .social {
-            width: 40px;
-            height: 40px;
-        }
-
         @media (max-width: 640px) {
             .title {
                 font-size: 28px !important;
                 line-height: 38px !important;
-            }
-
-            .subtitle {
-                font-size: 20px !important;
-                line-height: 28px !important;
-            }
-
-            .p-reference {
-                font-size: 12px !important;
-                line-height: 16px !important;
-            }
-
-            .paragraph {
-                font-size: 14px !important;
-                line-height: 20px !important;
-            }
-
-            .social {
-                width: 24px !important;
-                height: 24px !important;
             }
         }
 
@@ -307,26 +172,6 @@
                 font-size: 50px !important;
                 line-height: 1.15 !important;
             }
-
-            .subtitle {
-                font-size: 30px !important;
-                line-height: 36px !important;
-            }
-
-            .p-reference {
-                font-size: 20px !important;
-                line-height: 28px !important;
-            }
-
-            .paragraph {
-                font-size: 18px !important;
-                line-height: 28px !important;
-            }
-
-            .social {
-                width: 56px !important;
-                height: 56px !important;
-            }
         }
 
         .hover-text-green:hover {
@@ -334,29 +179,12 @@
         }
 
         /* -------------------------------------
-            OTHER STYLES THAT MIGHT BE USEFUL
-        ------------------------------------- */
+    
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+    
+    ------------------------------------- */
 
-        .powered-by a {
-            text-decoration: none;
-        }
-
-        hr {
-            border: 0;
-        }
-
-        .hidden {
-            display: none !important;
-        }
-
-        /* -------------------------------------
-            RESPONSIVE AND MOBILE FRIENDLY STYLES
-        ------------------------------------- */
         @media only screen and (max-width: 620px) {
-            .wrapper {
-                padding: 10px !important;
-            }
-
             .content {
                 padding: 0 !important;
             }
@@ -373,30 +201,65 @@
             }
         }
 
-        /* -------------------------------------
-            PRESERVE THESE STYLES IN THE HEAD
-        ------------------------------------- */
-        @media all {
-            .ExternalClass {
-                width: 100%;
+        /* Mode sombre */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #00211E;
+                color: #ffffff;
             }
 
-            .ExternalClass,
-            .ExternalClass p,
-            .ExternalClass span,
-            .ExternalClass font,
-            .ExternalClass td,
-            .ExternalClass div {
-                line-height: 100%;
+            .banner__highlight {
+                background-color: #B9FDA2 !important;
             }
 
-            .apple-link a {
-                color: inherit !important;
-                font-family: inherit !important;
-                font-size: inherit !important;
-                font-weight: inherit !important;
-                line-height: inherit !important;
-                text-decoration: none !important;
+            .title {
+                color: #ffffff !important;
+            }
+
+            .confirmation__insert {
+                background-color: #fff !important;
+                color: black
+            }
+
+            .recap_table {
+                background-color: #043430 !important;
+
+                & * {
+                    color: #fff !important;
+                }
+            }
+
+            .barcode_td {
+                background-color: #fff;
+                color: black;
+            }
+
+            .conditions__container {
+                color: #fff;
+            }
+
+            .explanations {
+                & * {
+                    background-color: #043430;
+                    color: #fff !important;
+                }
+            }
+
+            .disclaimer * {
+                color: #fff !important;
+            }
+
+            .faq,
+            .faq * {
+                background-color: #00211E !important;
+            }
+
+            .faq__background {
+                background-color: #00211E !important;
+            }
+
+            .faq__background--mark {
+                background-color: #379489;
             }
         }
     </style>
@@ -405,21 +268,21 @@
 <body>
     <!-- Top banner -->
     <table border="0" cellpadding="0" cellspacing="0" role="presentation"
-        style="margin: 0; width: 100%; background-color: #379489;padding-top: 20px">
+        style="margin: 0; width: 100%; background-color: #379489;">
         <tbody>
             <tr>
-                <td style="margin: 0; padding: 20px 0; border: 0; width: 100%"></td>
+                <td style="margin: 0; border: 0; width: 100%"></td>
             </tr>
             <tr>
-                <td style="text-align:center;padding-bottom:40px">
+                <td style="text-align:center;padding-block:30px">
                     <a href="https://sechapwb.secondelecture.com/">
-                        <img style="max-width: 95%; object-fit: contain" alt="Second Chapitre" height="100"
+                        <img style="max-width: 65%; object-fit: contain" alt="Second Chapitre" height="100"
                             src="https://sechapwb.secondelecture.com/img/logo.svg">
                     </a>
                 </td>
             </tr>
-            <tr style="background-color: #00221E">
-                <td>&nbsp;</td>
+            <tr class="banner__highlight" style="background-color: #00221E">
+                <td style="font-size: min(7px);">&nbsp;</td>
             </tr>
         </tbody>
     </table>
@@ -437,16 +300,14 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                     <tr>
                                         <td>
-                                            <h2 class="title"
+                                            <h1 class="title"
                                                 style="font-family: 'Montserrat', Helvetica, serif;margin: 0 0 30px 0;font-weight: 800;color: #379489;text-align: center;">
                                                 Confirmation de création de compte
-                                            </h2>
-                                            <p
-                                                style="font-family: 'DinProMedium', Helvetica, serif; font-size: 18px; margin-bottom: 30px; color:black">
+                                            </h1>
+                                            <p style="font-size: 18px; margin-bottom: 30px;">
                                                 Merci pour votre inscription sur Second Chapitre !
                                             </p>
-                                            <p
-                                                style="font-family: 'DinProMedium', Helvetica, serif; font-size: 18px; margin-bottom: 30px; color:black">
+                                            <p style="font-size: 18px; margin-bottom: 30px;">
                                                 Veuillez cliquer sur le bouton ci-dessous pour confirmer votre adresse
                                                 email et profiter pleinement de l'application Second Chapitre.
                                             </p>
