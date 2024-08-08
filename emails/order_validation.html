@@ -38,100 +38,13 @@
             width: 100%;
         }
 
-        /** Table Recap **/
-
-        table.recap_table {
-            color: #707070;
-        }
-
-        table.recap_table thead th {
-            font-size: 18px;
-            font-weight: 900;
-        }
-
-        table.recap_table tbody tr td {
-            padding: 15px 0;
-            font-size: 17px;
-            border-bottom: 1px solid #707070;
-        }
-
-        table.recap_table tbody tr:last-child td {
-            border-bottom: 0;
-        }
-
-        table.recap_table tfoot tr th {
-            font-size: 18px;
-            padding-top: 15px;
-            font-weight: bold;
-        }
-
-        /** Table BarCode **/
-
-        table.table_barcode .barcode_td {
-            display: block;
-            width: 100% !important;
-            height: auto !important;
-            padding: 25px 0 !important;
-        }
-
-        .barcode__insert--top {
-            text-align: center;
-        }
-
-        @media screen and (min-width: 640px) {
-            table.table_barcode .barcode_td {
-                display: table-cell !important;
-                width: 50% !important;
-                padding: 0 !important;
-                height: 174px !important;
-            }
-        }
-
-        /** Table Explanations **/
-
-        table.explanations .contact {
-            max-width: 90%;
-            margin: auto;
-            margin-bottom: 15px;
-        }
-
-        table.explanations tr>td {
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
-
-        table.explanations .explanations-elements>td {
-            padding: 32px 0 40px !important;
-        }
-
-        @media screen and (min-width: 640px) {
-            table.explanations .contact {
-                max-width: 100% !important;
-                margin-bottom: 0 !important;
-            }
-
-            table.explanations tr>td {
-                display: table-cell !important;
-                width: auto !important;
-            }
-
-            table.explanations .explanations-elements>td {
-                padding: 32px 15px 40px !important;
-            }
-        }
-
         table td {
             vertical-align: top;
         }
 
-        /* -------------------------------------
-            BODY & CONTAINER
-    ------------------------------------- */
         .container {
             display: block;
             margin: 0 auto !important;
-            /* makes it centered*/
             max-width: 100%;
             padding: 10px;
             width: 100%;
@@ -144,10 +57,6 @@
             max-width: 100%;
             padding: 10px;
         }
-
-        /* -------------------------------------
-            HEADER, FOOTER, MAIN
-            ------------------------------------- */
 
         .main {
             border-radius: 3px;
@@ -164,31 +73,98 @@
             object-fit: contain;
         }
 
-        @media (max-width: 640px) {
-            .title {
-                font-size: 28px !important;
-                line-height: 38px !important;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .title {
-                font-size: 50px !important;
-                line-height: 1.15 !important;
-            }
-        }
-
         .hover-text-green:hover {
             color: #379489 !important;
         }
 
-        /* -------------------------------------
-    
-    RESPONSIVE AND MOBILE FRIENDLY STYLES
-    
-    ------------------------------------- */
 
-        @media only screen and (max-width: 620px) {
+        /* Table Recap */
+
+        table.recap_table {
+            color: #707070;
+        }
+
+        table.recap_table thead th {
+            font-size: 19px;
+            font-weight: 900;
+        }
+
+        table.recap_table tbody tr td {
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid #707070;
+        }
+
+        table.recap_table tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        table.recap_table tfoot tr th {
+            font-size: 18px;
+            padding-top: 15px;
+            font-weight: bold;
+        }
+
+
+        /* Table BarCode */
+
+        table.table_barcode .barcode_td {
+            display: block;
+            width: 100% !important;
+            height: auto !important;
+            padding: 25px 0 !important;
+        }
+
+
+        /* Table Explanations */
+
+        table.explanations .contact {
+            max-width: 90%;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+        table.explanations tr>td {
+            display: block;
+            width: 100%;
+        }
+
+        table.explanations .explanations-elements>td {
+            padding: 32px 0 40px !important;
+        }
+
+
+        /* Desktop style */
+
+        @media screen and (min-width: 640px) {
+            table.explanations .contact {
+                max-width: 100% !important;
+                margin-bottom: 0 !important;
+            }
+
+            table.explanations tr>td {
+                display: table-cell !important;
+                width: auto !important;
+            }
+
+            table.explanations .explanations-elements>td {
+                padding: 32px 15px 40px !important;
+            }
+
+            table.table_barcode .barcode_td {
+                display: table-cell !important;
+                width: 50% !important;
+                padding: 0 !important;
+                height: 174px !important;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .title {
+                font-size: 28px !important;
+                line-height: 38px !important;
+            }
+
             .content {
                 padding: 0 !important;
             }
@@ -205,8 +181,17 @@
             }
         }
 
-        /* Mode sombre */
+        @media (min-width: 1024px) {
+            .title {
+                font-size: 50px !important;
+                line-height: 1.15 !important;
+            }
+        }
+
+        /* Dark mode */
+
         @media (prefers-color-scheme: dark) {
+
             body {
                 background-color: #00211E;
                 color: #ffffff;
@@ -222,15 +207,19 @@
 
             .confirmation__insert {
                 background-color: #fff !important;
-                color: black
+                color: black;
             }
 
             .recap_table {
                 background-color: #043430 !important;
+            }
 
-                & * {
-                    color: #fff !important;
-                }
+            .recap_table *,
+            .conditions__container,
+            .disclaimer *,
+            .faq *,
+            .hover-text-green {
+                color: #fff !important;
             }
 
             .barcode_td {
@@ -238,25 +227,13 @@
                 color: black;
             }
 
-            .conditions__container {
+            .explanations * {
+                background-color: #043430;
                 color: #fff !important;
             }
 
-            .explanations {
-                & * {
-                    background-color: #043430;
-                    color: #fff !important;
-                }
-            }
-
-            .disclaimer * {
-                color: #fff !important;
-            }
-
-            .faq,
-            .faq * {
+            .faq {
                 background-color: #00211E !important;
-                color: #fff !important;
             }
 
             .faq__background {
@@ -271,10 +248,6 @@
                 background-color: #379489 !important;
                 border-color: #379489 !important;
                 color: white;
-            }
-
-            .hover-text-green {
-                color: #fff !important;
             }
         }
     </style>
@@ -302,234 +275,234 @@
             </tr>
         </tbody>
     </table>
-    <!-- Marges inline -->
-    <table border="0" cellpadding="0" cellspacing="0" class="body" role="presentation" style="margin: auto">
+
+    <!-- Body -->
+    <table border="0" cellpadding="0" cellspacing="0" class="body" role="presentation" style="margin: auto; ">
         <tr>
             <td class="container" width="992" align="center"
                 style="display: block;margin: 0 auto !important;max-width: 992px;padding: 10px;width: 95%;">
-                <div class="content"
+
+                <!-- Main -->
+                <table class="main" border="0" cellpadding="0" cellspacing="0" role="presentation"
                     style="box-sizing: border-box;display: block;margin: 0 auto;max-width: 992px;padding: 10px;">
-                    <!-- Body -->
-                    <table class="main" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                        <!-- Titre, phrase, cadres -->
-                        <tr>
-                            <td class="wrapper" style="box-sizing: border-box;padding: 20px 20px 20px 20px;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tr>
-                                        <td>
-                                            <h2 class="title"
-                                                style="font-family: 'Montserrat', Helvetica, serif;margin: 0 0 30px 0;font-weight: 800;color: #379489;text-align: center;">
-                                                Nous avons bien reçu votre colis&nbsp;!
-                                            </h2>
-                                            <p
-                                                style="font-family: 'Montserrat', Helvetica, serif; font-size: 18px; margin-bottom: 15px; padding-inline: 10px;">
-                                                Grâce à votre reprise vous avez débloqué un bon d’achat dans votre
-                                                librairie.
-                                            </p>
 
-                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                                class="table_barcode"
-                                                style="padding: 20px; margin: 0; border-collapse: separate; min-width: 100%; width: 100%;">
-                                                <tbody>
-                                                    <tr style="background-color: #F3F3F3;">
-                                                        <td style="vertical-align:middle; width: 50%; font-family: 'Montserrat', Arial, sans-serif; background-color: #F3F3F3; border: 2px solid #F3F3F3;"
-                                                            width="355" height="174"
-                                                            class="barcode_td barcode__insert--top">
+                    <!-- Titre, phrase, cadres -->
+                    <tr>
+                        <td class="mainInsert" style="box-sizing: border-box;padding: 20px 20px 20px 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td>
+                                        <h1 class="title"
+                                            style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-weight: 800; color: #379489; text-align: center; line-height: 40px">
+                                            Nous avons bien reçu votre colis&nbsp;!
+                                        </h1>
+                                        <p
+                                            style="font-family: 'Montserrat', Helvetica, serif; font-size: 18px; margin-bottom: 15px; padding-inline: 10px; text-align: left;">
+                                            Grâce à votre reprise, vous avez débloqué un bon d’achat dans votre
+                                            librairie.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                            class="table_barcode"
+                                            style="padding: 10px; margin: 0; border-collapse: separate; min-width: 100%; width: 100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align:middle; font-family: 'Montserrat', Arial, sans-serif; background-color: #F3F3F3; border: 20px solid #F3F3F3; color: black; text-align: left; padding-inline: 10px;"
+                                                        width="355" height="174"
+                                                        class="barcode_td barcode__insert--top">
+                                                        <div align="center" style="text-align: left;">
                                                             <span
-                                                                style="font-size: 20px; font-weight: bold;line-height: 35px;">Valeur
-                                                                de la reprise : </span> **voucher_ amount**
+                                                                style="font-size: 20px; font-weight: bold;line-height: 35px;">&nbsp;N°
+                                                                de reprise : </span> {{voucher.code}}
                                                             <br>
                                                             <span
-                                                                style="font-size: 20px;font-weight: bold; line-height: 35px;">Valable
-                                                                à : </span> **store.name**
+                                                                style="font-size: 20px;font-weight: bold; line-height: 35px;">&nbsp;Montant
+                                                                : </span> {{voucher.amount}}
                                                             <br>
                                                             <span
-                                                                style="font-size: 20px; font-weight: bold; line-height: 35px;">Jusqu'au
-                                                                : </span> **voucher.expired_at**
+                                                                style="font-size: 20px; font-weight: bold; line-height: 35px;">&nbsp;Valable
+                                                                à :</span> {{shop.name}}
                                                             <br>
                                                             <span
-                                                                style="font-size: 20px; font-weight: bold; line-height: 35px;">Code
-                                                                : </span> **voucher.code**
-                                                        </td>
+                                                                style="font-size: 20px; font-weight: bold; line-height: 35px;">&nbsp;Jusqu'au
+                                                                :</span> {{voucher.expiredAt}}
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="vertical-align:middle; border: 2px solid #379489; width: 50%; background-color: #fff;"
+                                                        width="351" height="170" align="center" class="barcode_td">
+                                                        <img src="https://i.ibb.co/k4wGrDh/Code-barres-svg.png"
+                                                            class="barcode"
+                                                            style="height: 90px; width: 222px; object-fit: contain; background-color: #fff;"
+                                                            width="222" height="90">
+                                                        <p
+                                                            style="font-size: 14px; display: block; text-align: center; padding: 10px 5px 0 5px; margin: 0; font-weight: bold; color: black">
+                                                            {{voucher.code}}
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td> <!-- mainInsert -->
+                    </tr>
 
-                                                        <td style="vertical-align:middle; border: 2px solid #379489; width: 50%;"
-                                                            width="351" height="170" align="center" class="barcode_td">
-                                                            <img src="https://reprise.secondelecture.com/barcodes/**cart_number**"
-                                                                class="barcode"
-                                                                style="height: 90px; width: 222px; object-fit: contain; background-image: linear-gradient(#ffffff, #ffffff);"
-                                                                width="222" height="90">
-                                                            <p
-                                                                style="font-size: 14px; display: block; text-align: center; padding: 10px 5px 0 5px; margin: 0; font-weight: bold;">
-                                                                **voucher_amount**
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!-- Disclaimer -->
-                        <tr>
-                            <td class="conditions__container"
-                                style="padding: 10px 20px 20px 20px;color:#379489;font-size: small; font-weight: 500; font-style: italic;">
-                                <ul>
-                                    <li>Le Bon d'achat, dont la valeur est fixée
-                                        automatiquement par l'application, est
-                                        utilisable en une seule fois dans la
-                                        librairie dans laquelle la reprise de
-                                        livres d'occasion a été effectuée,
-                                        pendant 2 mois à compter de son
-                                        activation, en France Métropolitaine
-                                        uniquement.</li>
-                                    <li>Le Bon d'achat sera utilisable à partir
-                                        d'un minimum d'achat correspondant à la
-                                        valeur du Bon d'achat.</li>
-                                    <li>Le Bon d'achat n'est pas sécable, ni
-                                        remboursable, ni revendable, ni
-                                        échangeable contre des espèces.</li>
-                                    <li>Le bon de reprise pour procéder au dépôt
-                                        des livres en point de vente du
-                                        Partenaire est valable pour une durée de
-                                        7 jours calendaires. Passé ce délai,
-                                        l’Offre de reprise ne sera plus valable
-                                        et le Vendeur devra recommencer la
-                                        préparation de son panier de Reprise.
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <!-- F.A.Q -->
-                        <tr class="explanations-help faq" style="background-color: #fff;">
-                            <td colspan="3" align="center" style="padding-top: 40px; padding-bottom:0;">
-                                <h3 class="" style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: 32px; font-weight: 800;
-                                        color: #379489; text-align: center">
-                                    Besoin d'aide ?
-                                </h3>
-                                <p class="contact"
-                                    style="font-size: 18px; line-height: 22px; text-align: center; padding: 0 0 10px 0;">
-                                    Contactez-nous du lundi au vendredi de 9h30 à 12h30 : <br>
-                                    Par téléphone au
-                                    <a class="hover-text-green" href="tel:+33178900990" target="_blank"
-                                        style="color: #1D1E1B; text-decoration: none;">
-                                        01 78 90 09 90
-                                    </a>
-                                    ou par mail à
-                                    <a class="hover-text-green" href="mailto:relation_client@chapitre.com"
-                                        target="_blank" style="color: #1D1E1B; text-decoration: none;">
-                                        relation_client@chapitre.com
-                                    </a>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" align="center"
-                                style="height: 50px;color:white; padding: 0px 0 20px 0; background-color: #fff;"
-                                class="faq-button faq__background">
-                                <div class="faq__background">
-                                    <a href="https://reprise.secondelecture.com/app/faq" style="text-align: center; display: inline-block;
-                                            font-size: 20px; font-weight: 900; color: #fff; text-decoration: none;">
+                    <!-- Disclaimer -->
+                    <tr>
+                        <td class="conditions__container"
+                            style="padding-inline: 10px;color:#379489;font-size: small; font-weight: 500; font-style: italic; text-align: left;">
+                            <p>- Le Bon d'achat, dont la valeur est fixée
+                                automatiquement par l'application, est
+                                utilisable en une seule fois dans la
+                                librairie dans laquelle la reprise de
+                                livres d'occasion a été effectuée,
+                                pendant 2 mois à compter de son
+                                activation, en France Métropolitaine
+                                uniquement.</p>
+                            <p>- Le Bon d'achat sera utilisable à partir
+                                d'un minimum d'achat correspondant à la
+                                valeur du Bon d'achat.</p>
+                            <p>- Le Bon d'achat n'est pas sécable, ni
+                                remboursable, ni revendable, ni
+                                échangeable contre des espèces.</p>
+                            <p>- Le bon de reprise pour procéder au dépôt
+                                des livres en point de vente du
+                                Partenaire est valable pour une durée de
+                                7 jours calendaires. Passé ce délai,
+                                l’Offre de reprise ne sera plus valable
+                                et le Vendeur devra recommencer la
+                                préparation de son panier de Reprise.
+                            </p>
+
+                        </td>
+                    </tr>
+                    <!-- F.A.Q -->
+                    <tr class="explanations-help faq" style="background-color: #fff;">
+                        <td colspan="3" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
+                            <h2
+                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-weight: 800; color: #379489; text-align: center">
+                                Besoin d'aide ?
+                            </h2>
+                            <p class="contact" style="line-height: 22px; text-align: center; padding: 0 0 10px 0;">
+                                Contactez-nous du lundi au vendredi de 9h30 à 12h30 : <br>
+                                Par téléphone au
+                                <a class="hover-text-green" href="tel:+33178900990" target="_blank"
+                                    style="color: #1D1E1B; text-decoration: none;">
+                                    01 78 90 09 90
+                                </a>
+                                ou par mail à
+                                <a class="hover-text-green" href="mailto:relation_client@chapitre.com" target="_blank"
+                                    style="color: #1D1E1B; text-decoration: none;">
+                                    relation_client@chapitre.com
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center"
+                            style="height: 50px;color:white; padding: 0px 0 20px 0; background-color: #fff;"
+                            class="faq-button faq__background">
+                            <div class="faq__background">
+                                <a class="faq__background" href="https://reprise.secondelecture.com/app/faq"
+                                    style="text-align: center; display: inline-block; font-size: 20px; font-weight: 900; color: #fff; text-decoration: none;">
                                     <p class="faq__background"
-                                    style=" font-weight: 800; text-align: center; font-size: large; ">
-                                    <span style="background-color: #379489; padding: 8px;">
-                                        <span class="faq__background--mark"
-                                        style="display: inline-block; border: 2px solid; border-radius: 50%; font-weight: 700; font-size: 14px; text-align: center; width: 16px; height: 16px; line-height: 16px;">?</span>
-                                        &nbsp;F.A.Q</span>
+                                        style=" font-weight: 800; text-align: center; font-size: large; ">
+                                        <span style="background-color: #379489; padding: 8px;">
+                                            <span class="faq__background--mark"
+                                                style="display: inline-block; border: 2px solid #fff; color: #fff; border-radius: 50%; font-weight: 700; font-size: 14px; text-align: center; width: 16px; height: 16px; line-height: 16px;">?</span>
+                                            &nbsp;F.A.Q</span>
                                     </p>
                                 </a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table> <!-- main -->
 
 
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="socialNetworks">
-                        <tbody>
-                            <tr align="center" style="width: 100%;">
-                                <td align="center" width="120" style="width: 100%; padding-top: 30px;">
-                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                        <tbody>
-                                            <tr align="center">
-                                                <td>
-
-                                                    <a href="https://reprise.secondelecture.com/disclaimer"
-                                                        target="_blank"
-                                                        style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
-                                                        Mentions&nbsp;légales
-                                                    </a>
-
-                                                    <span class="hidden">&nbsp;</span>
-
-                                                    <a href="https://reprise.secondelecture.com/cgua" target="_blank"
-                                                        style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
-                                                        CGUA
-                                                    </a>
-
-                                                    <span class="hidden">&nbsp;</span>
-
-                                                    <a href="https://reprise.secondelecture.com/terms"
-                                                        class="customButton" target="_blank"
-                                                        style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline;">
-                                                        Données&nbsp;personnelles
-                                                    </a>
-                                                </td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                        <tr>
-                            <td class="disclaimer" style="padding: 32px 20px;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="socialNetworks">
+                    <tbody>
+                        <tr align="center" style="width: 100%;">
+                            <td align="center" width="120" style="width: 100%;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tr>
-                                        <td>
-                                            <p
-                                                style="margin: 0; color: #707070; font-size: 14px; line-height: 16px; font-family: 'Montserrat', Arial, sans-serif;">
-                                                NOSOLI 72 est responsable de traitement du site de revente de livres
-                                                d’occasion. La base légale de ce traitement est le respect d’une
-                                                obligation
-                                                légale. Vos données sont indispensables à la réalisation du traitement
-                                                et
-                                                sont destinées aux personnes habilitées au sein de NOSOLI 72, ses
-                                                partenaires et sous-traitants, elles seront conservées pendant une durée
-                                                de
-                                                10 ans à partir de leur collecte.
-                                            </p>
-                                            <p
-                                                style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: 14px; line-height: 16px;">
-                                                En application de la loi Informatique et
-                                                Libertés n°78-17 du 06/01/1978 modifiée et le Règlement Européen Général
-                                                2016/679 du 27/04/2016 sur la protection des données, vous disposez d’un
-                                                droit d’opposition, d’accès, de rectification, d’effacement (droit à
-                                                l’oubli) et de limitation sur l’ensemble des données vous concernant.
-                                                Vous
-                                                pouvez exercer vos droits par courriel à l’adresse dpo@nosoli.fr ou par
-                                                courrier à l’adresse FD SERVICES - DPO - 191 rue des Cinq Voies, 59200
-                                                TOURCOING. Vous disposez également du droit d’introduire une réclamation
-                                                auprès de la CNIL.
-                                            </p>
-                                            <p
-                                                style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: 14px; line-height: 16px;">
-                                                Pour plus d’information sur la signification de vos
-                                                droits et sur l’introduction d’une réclamation, vous pouvez consulter le
-                                                site de la CNIL.
-                                            </p>
-                                        </td>
-                                    </tr>
+                                    <tbody>
+                                        <tr align="center">
+                                            <td>
+                                                <a href="https://reprise.secondelecture.com/disclaimer" target="_blank"
+                                                    style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
+                                                    Mentions&nbsp;légales
+                                                </a>
+                                                <span class="hidden">&nbsp;</span>
+                                                <a href="https://reprise.secondelecture.com/cgua" target="_blank"
+                                                    style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
+                                                    CGUA
+                                                </a>
+                                                <span class="hidden">&nbsp;</span>
+                                                <a href="https://reprise.secondelecture.com/terms" class="customButton"
+                                                    target="_blank"
+                                                    style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline;">
+                                                    Données&nbsp;personnelles
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </td>
                         </tr>
-                    </table>
-                </div>
+                    </tbody>
+                </table> <!-- socialNetworks -->
 
-            </td>
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                        <td class="disclaimer" style="padding: 32px 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td>
+                                        <p
+                                            style="margin: 0; color: #707070; font-size: 14px; line-height: 16px; font-family: 'Montserrat', Arial, sans-serif;">
+                                            NOSOLI 72 est responsable de traitement du site de revente de livres
+                                            d’occasion. La base légale de ce traitement est le respect d’une
+                                            obligation
+                                            légale. Vos données sont indispensables à la réalisation du traitement
+                                            et
+                                            sont destinées aux personnes habilitées au sein de NOSOLI 72, ses
+                                            partenaires et sous-traitants, elles seront conservées pendant une durée
+                                            de
+                                            10 ans à partir de leur collecte.
+                                        </p>
+                                        <p
+                                            style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: 14px; line-height: 16px;">
+                                            En application de la loi Informatique et
+                                            Libertés n°78-17 du 06/01/1978 modifiée et le Règlement Européen Général
+                                            2016/679 du 27/04/2016 sur la protection des données, vous disposez d’un
+                                            droit d’opposition, d’accès, de rectification, d’effacement (droit à
+                                            l’oubli) et de limitation sur l’ensemble des données vous concernant.
+                                            Vous
+                                            pouvez exercer vos droits par courriel à l’adresse dpo@nosoli.fr ou par
+                                            courrier à l’adresse FD SERVICES - DPO - 191 rue des Cinq Voies, 59200
+                                            TOURCOING. Vous disposez également du droit d’introduire une réclamation
+                                            auprès de la CNIL.
+                                        </p>
+                                        <p
+                                            style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: 14px; line-height: 16px;">
+                                            Pour plus d’information sur la signification de vos
+                                            droits et sur l’introduction d’une réclamation, vous pouvez consulter le
+                                            site de la CNIL.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td> <!-- disclaimer -->
+                    </tr>
+                </table>
+
+
+            </td> <!-- container -->
         </tr>
     </table>
 

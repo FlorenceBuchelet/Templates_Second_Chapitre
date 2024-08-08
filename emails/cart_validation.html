@@ -16,7 +16,6 @@
             border: none;
             -ms-interpolation-mode: bicubic;
             max-width: 100%;
-            height: auto;
         }
 
         body {
@@ -43,7 +42,6 @@
         }
 
         .container {
-            display: block;
             margin: 0 auto !important;
             max-width: 100%;
             padding: 10px;
@@ -52,7 +50,6 @@
 
         .content {
             box-sizing: border-box;
-            display: block;
             margin: 0 auto;
             max-width: 100%;
             padding: 10px;
@@ -115,19 +112,12 @@
             padding: 25px 0 !important;
         }
 
-
         /* Table Explanations */
 
         table.explanations .contact {
             max-width: 90%;
             margin: auto;
             margin-bottom: 15px;
-        }
-
-        table.explanations tr>td {
-            display: block;
-            width: 100%;
-            text-align: center;
         }
 
         table.explanations .explanations-elements>td {
@@ -146,10 +136,6 @@
             table.explanations tr>td {
                 display: table-cell !important;
                 width: auto !important;
-            }
-
-            table.explanations .explanations-elements>td {
-                padding: 32px 15px 40px !important;
             }
 
             table.table_barcode .barcode_td {
@@ -260,486 +246,505 @@
         style="margin: 0; width: 100%; background-color: #379489;">
         <tbody>
             <tr>
-                <td style="text-align: center; padding: 30px 0;">
+                <td style="margin: 0; border: 0; width: 100%"></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;padding:30px 0;">
                     <a href="https://sechapwb.secondelecture.com/">
-                        <img alt="Second Chapitre" src="https://i.ibb.co/qdVszPF/mail-svg.png" height="100"
-                            style="max-width: 65%; object-fit: contain">
+                        <img style="max-width: 65%; object-fit: contain" alt="Second Chapitre" height="100"
+                            src="https://i.ibb.co/qdVszPF/mail-svg.png">
                     </a>
                 </td>
             </tr>
-            <tr class="banner__highlight" style="background-color: #00221E;">
+            <tr class="banner__highlight" style="background-color: #00221E">
                 <td style="font-size: min(7px);">&nbsp;</td>
             </tr>
         </tbody>
     </table>
 
-    <!-- Marges inline -->
-    <table border="0" cellpadding="0" cellspacing="0" class="body" role="presentation" style="margin: auto">
+
+    <!-- Body -->
+    <table border="0" cellpadding="0" cellspacing="0" class="body" role="presentation"
+        style="margin: auto; padding: 20px;">
         <tr>
             <td class="container" width="992" align="center"
-                style="display: block;margin: 0 auto !important;max-width: 100%;padding: 10px;width: 95%;">
-                <div class="content"
-                    style="box-sizing: border-box;display: block;margin: 0 auto;max-width: 100%;padding: 10px;">
-                    <!-- Confirmation, librairie de dépôt, message -->
-                    <table class="main" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                style="margin: 0 auto !important;max-width: 100%;padding: 10px;width: 95%;">
+                <!-- Confirmation, librairie de dépôt, message -->
+                <h1 class="title"
+                    style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 20px 0; font-weight: 800; color: #379489; text-align: center; line-height: 40px">
+                    Votre reprise de livres est confirmée&nbsp;!
+                </h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table align="center" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
                         <tr>
-                            <td class="wrapper" style="box-sizing: border-box; padding: 10px;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tr>
-                                        <td>
-                                            <h1 class="title"
-                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 30px 0; font-weight: 800; color: #379489; text-align: center; line-height: 40px">
-                                                Votre reprise de livres est confirmée&nbsp;!
-                                            </h1>
-                                            <table align="center" width="100%" cellpadding="0" cellspacing="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="20%" style="text-align: center;">&nbsp;</td>
-                                                        <td class="confirmation__insert" colspan="3" align="center"
-                                                            style="padding: 15px; background-color: #B9FDA2; text-align: center;">
-                                                            <h2 style="margin: 0; font-weight: 900; ">
-                                                                <u>Librairie de dépôt</u> : {{store.name}}
-                                                            </h2>
-                                                            <p style="font-weight: normal; margin: 5px 0;">
-                                                                {{store.street}} - {{store.zipcode}} {{store.city}}
-                                                            </p>
-                                                        </td>
-                                                        <td width="20%" style="text-align: center;">&nbsp;</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                            <td width="20%" style="text-align: center;">
+                                &nbsp;</td>
+                            <td class="confirmation__insert" colspan="3" align="center"
+                                style="padding: 15px; background-color: #B9FDA2; text-align: center;">
+                                <h2 style="margin: 0; font-weight: 900; ">
+                                    <u>Librairie de dépôt</u> : {{store.name}}
+                                </h2>
+                                <p style="font-weight: normal; margin: 5px 0;">
+                                    {{store.street}} - {{store.zipcode}} {{store.city}}
+                                </p>
+                            </td>
+                            <td width="20%" style="text-align: center;">
+                                &nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
 
-                                            <p style=" margin-inline: auto; margin-bottom: 30px; max-width: 95%;">
-                                                Merci d’avoir fait appel à nous pour la vente de vos livres et, par la
-                                                même occasion, de faire un geste pour notre planète en leur offrant une
-                                                seconde lecture !</p>
-                                            <!-- Récapitulatif de reprise -->
-                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                                class="recap_table" align="center"
-                                                style="padding: 25px; background-color: #F3F3F3; width: 90%; margin: auto;">
-                                                <thead>
-                                                    <tr>
-                                                        <td colspan="2" style="padding-bottom: 30px;">
-                                                            <h2
-                                                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0; font-weight: 900;">
-                                                                Récapitulatif de votre reprise n°{{cart_number}}
-                                                            </h2>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th
-                                                            style="padding-bottom: 8px; text-align: left; text-transform: uppercase; font-size: large; font-weight: 700; color: #707070;">
-                                                            Titre
-                                                        </th>
-                                                        <th
-                                                            style="padding-bottom: 8px; text-align: right; text-transform: uppercase; font-size: large; font-weight: 700; color: #707070;">
-                                                            Prix
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <!-- {% for book in books %} -->
-                                                    <tr>
-                                                        <td
-                                                            style="padding: 5px 0; font-size: medium; border-bottom: 1px solid #707070; vertical-align: top; color: #707070;">
-                                                            {{book.title}}
-                                                        </td>
-                                                        <td
-                                                            style="text-align: right; padding: 5px 0; font-size: medium; border-bottom: 1px solid #707070; vertical-align: top; color: #707070;">
-                                                            <span class="recap_price">{{book.price}}</span>
-                                                            <span class="recap_currency">€</span>
-                                                        </td>
-                                                        <!-- {% endfor %} -->
-                                                    </tr>
-                                                </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <th
-                                                            style="text-align: left; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: large; font-weight: 700; color: #707070;">
-                                                            Total
-                                                        </th>
-                                                        <th
-                                                            style="text-align: right; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: large; font-weight: 700; color: #707070;">
-                                                            <span class="recap_price">{{total_price}}</span>
-                                                            <span class="recap_currency">€</span>
-                                                        </th>
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
+        <tr>
+            <td align="center">
+                <p style="margin: 20px auto;">
+                    Merci d’avoir fait appel à nous pour la vente de vos livres et, par la
+                    même occasion, de faire un geste pour notre planète en leur offrant une
+                    seconde lecture !</p>
+            </td>
+        </tr>
 
-                                            <!-- Code-barres, date de validation de la reprise et disclaimer -->
-                                            <table align="center" width="80%" cellpadding="0" cellspacing="0"
-                                                style="margin-top: 30px;">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <table border="0" cellpadding="0" cellspacing="0"
-                                                                role="presentation"
-                                                                style="border-spacing: 0; margin: 0; border-collapse: separate; width: 100%;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td width="20%" style="text-align: center;">
-                                                                            &nbsp;</td>
-                                                                        <td>
-                                                                            <table border="0" cellpadding="0"
-                                                                                cellspacing="0" role="presentation"
-                                                                                style="width: 100%; border: 2px solid #379489;">
-                                                                                <tr>
-                                                                                    <td
-                                                                                        style="vertical-align: middle; text-align: center; background-color: #fff;">
-                                                                                        <img src="https://i.ibb.co/k4wGrDh/Code-barres-svg.png"
-                                                                                            class="barcode"
-                                                                                            style="height: 90px; width: 222px; object-fit: contain; background-image: linear-gradient(#ffffff, #ffffff); padding: 10px;"
-                                                                                            width="222" height="90"
-                                                                                            alt="Code-barres">
-                                                                                        <p
-                                                                                            style="font-size: medium; display: block; text-align: center; padding: 10px; margin: 0; color: black;">
-                                                                                            {{cart_number}}</p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                        <td width="20%" style="text-align: center;">
-                                                                            &nbsp;</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td width="20%" style="text-align: center;">
-                                                                            &nbsp;</td>
 
-                                                                        <td
-                                                                            style="vertical-align: middle; background-color: #379489; color: white; width: 50%; text-align: center;">
-                                                                            <h2
-                                                                                style="font-weight: 650; margin: 0; padding: 20px; font-family: 'Montserrat', Arial, sans-serif;">
-                                                                                Offre de reprise valable jusqu'au
-                                                                                {{end_validity_date}} <span
-                                                                                    style="font-style: italic; font-size: medium; font-weight: 300;">(1)</span>
-                                                                            </h2>
-                                                                        </td>
-                                                                        <td width="20%" style="text-align: center;">
-                                                                            &nbsp;</td>
-
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td colspan="3" style="padding: 20px 0;">
-                                                                            <table border="0" cellpadding="0"
-                                                                                cellspacing="0" role="presentation"
-                                                                                style="width: 100%; padding: 20px;">
-                                                                                <tr>
-                                                                                    <td
-                                                                                        style="font-weight: 400; font-size: small; line-height: 18px; font-style: italic; color: #1D1E1B;">
-                                                                                        <table
-                                                                                            class="conditions__container"
-                                                                                            style="width: 100%;">
-                                                                                            <tr>
-                                                                                                <td
-                                                                                                    style="vertical-align: top; width: 20px;">
-                                                                                                    (1)</td>
-                                                                                                <td>
-                                                                                                    <ul
-                                                                                                        style="list-style-type: circle; margin: 0; padding-left: 20px;">
-                                                                                                        <li>Le Bon
-                                                                                                            d'achat,
-                                                                                                            dont la
-                                                                                                            valeur est
-                                                                                                            fixée
-                                                                                                            automatiquement
-                                                                                                            par
-                                                                                                            l'application,
-                                                                                                            est
-                                                                                                            utilisable
-                                                                                                            en une seule
-                                                                                                            fois dans la
-                                                                                                            librairie
-                                                                                                            dans
-                                                                                                            laquelle la
-                                                                                                            reprise de
-                                                                                                            livres
-                                                                                                            d'occasion a
-                                                                                                            été
-                                                                                                            effectuée,
-                                                                                                            pendant 2
-                                                                                                            mois à
-                                                                                                            compter de
-                                                                                                            son
-                                                                                                            activation,
-                                                                                                            en France
-                                                                                                            Métropolitaine
-                                                                                                            uniquement.
-                                                                                                        </li>
-                                                                                                        <li>Le Bon
-                                                                                                            d'achat sera
-                                                                                                            utilisable à
-                                                                                                            partir d'un
-                                                                                                            minimum
-                                                                                                            d'achat
-                                                                                                            correspondant
-                                                                                                            à la valeur
-                                                                                                            du Bon
-                                                                                                            d'achat.
-                                                                                                        </li>
-                                                                                                        <li>Le Bon
-                                                                                                            d'achat
-                                                                                                            n'est pas
-                                                                                                            sécable, ni
-                                                                                                            remboursable,
-                                                                                                            ni
-                                                                                                            revendable,
-                                                                                                            ni
-                                                                                                            échangeable
-                                                                                                            contre des
-                                                                                                            espèces.
-                                                                                                        </li>
-                                                                                                        <li>Le bon de
-                                                                                                            reprise pour
-                                                                                                            procéder au
-                                                                                                            dépôt des
-                                                                                                            livres en
-                                                                                                            point de
-                                                                                                            vente du
-                                                                                                            Partenaire
-                                                                                                            est valable
-                                                                                                            pour une
-                                                                                                            durée de 7
-                                                                                                            jours
-                                                                                                            calendaires.
-                                                                                                            Passé ce
-                                                                                                            délai,
-                                                                                                            l’Offre de
-                                                                                                            reprise ne
-                                                                                                            sera plus
-                                                                                                            valable et
-                                                                                                            le Vendeur
-                                                                                                            devra
-                                                                                                            recommencer
-                                                                                                            la
-                                                                                                            préparation
-                                                                                                            de son
-                                                                                                            panier de
-                                                                                                            Reprise.
-                                                                                                        </li>
-                                                                                                    </ul>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
-                                    </tr>
-                                    </tbody>
-                                </table>
+        <!-- Récapitulatif de reprise -->
+        <tr>
+            <td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="recap_table" align="center"
+                    style="padding: 25px; background-color: #F3F3F3; margin: 10px; margin: auto;">
+                    <thead>
+                        <tr>
+                            <td colspan="2" style="padding-bottom: 30px;">
+                                <h2 style="font-family: 'Montserrat', Helvetica, serif; margin: 0; font-weight: 900;">
+                                    Récapitulatif de votre reprise n°{{cart.number}}
+                                </h2>
                             </td>
                         </tr>
-                    </table>
+                        <tr>
+                            <th
+                                style="padding-bottom: 8px; text-align: left; text-transform: uppercase; font-size: large; font-weight: 700; color: #707070;">
+                                Titre
+                            </th>
+                            <th
+                                style="padding-bottom: 8px; text-align: right; text-transform: uppercase; font-size: large; font-weight: 700; color: #707070;">
+                                Prix
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- {% for book in books %} -->
+                        <tr>
+                            <td
+                                style="padding: 5px 0; font-size: medium; border-bottom: 1px solid #707070; vertical-align: top; color: #707070;">
+                                {{book.title}}
+                            </td>
+                            <td
+                                style="text-align: right; padding: 5px 0; font-size: medium; border-bottom: 1px solid #707070; vertical-align: top; color: #707070;">
+                                <span class="recap_price">{{book.price}}&nbsp;€</span>
+                            </td>
+                            <!-- {% endfor %} -->
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th
+                                style="text-align: left; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: large; font-weight: 700; color: #707070;">
+                                Total
+                            </th>
+                            <th
+                                style="text-align: right; text-transform: uppercase; padding-top: 15px; padding-bottom: 15px; font-size: large; font-weight: 700; color: #707070;">
+                                <span class="recap_price">{{total.price}}&nbsp;€</span>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
             </td>
         </tr>
-    </table>
+        <!-- End recap -->
 
-    <!-- "Comment emballer vos livres" -->
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="explanations"
-        style="background-color: #F3F3F3; width: 100%">
-        <tr class="explanations-help">
-            <td colspan="2" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
-                <h2 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-weight: 800;
-										color: #379489; text-align: center">
-                    Comment emballer vos livres&nbsp;?&nbsp;*
-                </h2>
-            </td>
-        </tr>
 
-        <tr class="explanations-elements">
-            <td width="188" align="center" style="padding:32px 15px 40px 15px;">
-                <img src="https://www.images-chapitre.com/babel/images/reprise.png" alt="Emballez vos livres"
-                    style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;" width="88"
-                    height="88" border="0">
-                <h4 style="text-align: center; max-width: 90%; margin: auto;">
-                    1 reprise = 1 colis<br><span style="color: red !important">20 livres max. par colis
-                    </span>
-                </h4>
-            </td>
-            <td width="188" align="center" style="padding:32px 15px 40px 15px;">
-                <img src="https://www.images-chapitre.com/babel/images/carton.png" alt="Carton adapté"
-                    style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;" width="88"
-                    height="88" border="0">
-                <h4 style="text-align: center; max-width: 90%; margin: auto;">
-                    Protégez bien vos livres dans un colis solide et adapté
-                </h4>
-            </td>
-        </tr>
+        <!-- Barcode insert -->
         <tr>
-            <td width="188" align="center" style="padding:32px 15px 40px 15px;">
-                <img src="https://www.images-chapitre.com/babel/images/adhesif.png" alt="Ruban adhésif"
-                    style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;" width="88"
-                    height="88" border="0">
-                <h4 style="max-width: 90%; margin: auto;">
-                    Fermez le colis avec du ruban adhésif
-                </h4>
-            </td>
-            <td width="188" align="center" style="padding:32px 15px 40px 15px;">
-                <img src="https://www.images-chapitre.com/babel/images/colisf.png" alt="Colis fermé"
-                    style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;" width="88"
-                    height="88" border="0">
-                <h4 style="text-align: center; max-width: 90%; margin: auto;">
-                    Transportez votre colis dans la librairie de votre choix
-                </h4>
-            </td>
-        </tr>
-        <tr class="explanations-elements">
-            <td width="188" align="center" style="padding:32px 15px 40px 15px;">
-                <img src="https://www.images-chapitre.com/babel/images/telcab.png" alt="Code-barres sur téléphone"
-                    style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;" width="88"
-                    height="88" border="0">
-                <h4 style="text-align: center; max-width: 90%; margin: auto; ">
-                    Présentez votre code-barres de reprise à un libraire
-                </h4>
-            </td>
-            <td width="188" align="center" style="padding:32px 15px 40px 15px;">
-                <img src="https://www.images-chapitre.com/babel/images/ba.png" alt="bon d'achat"
-                    style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;" width="88"
-                    height="88" border="0">
-                <h4 style="max-width: 90%; margin: auto; ">
-                    Recevez votre bon d’achat et faites-vous plaisir !
-                </h4>
-            </td>
-        </tr>
-        <tr class="explanations-help">
-            <td colspan="2" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
-                <h5 style="max-width: 80%; margin: auto;
-										color: #707070; text-align: center; padding: 0 0 20px 0; font-weight: 400;">
-                    *&nbsp;Veuillez noter que le libraire se réserve le droit de refuser tout colis dont
-                    l'emballage ne garantit pas une protection suffisante des livres expédiés.
-                </h5>
-            </td>
-        </tr>
-
-        <!-- F.A.Q -->
-        <tr class="explanations-help faq" style="background-color: #fff;">
-            <td colspan="3" align="center" style="padding-top: 40px; padding-bottom:0; color: #1D1E1B;">
-                <h2 style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-size: larger; font-weight: 800;
-color: #379489; text-align: center">
-                    Besoin d'aide ?
-                </h2>
-                <p class="contact" style="line-height: 22px; text-align: center; padding: 0 0 10px 0;">
-                    Contactez-nous du lundi au vendredi de 9h30 à 12h30 : <br>
-                    Par téléphone au
-                    <a class="hover-text-green" href="tel:+33178900990" target="_blank"
-                        style="color: #1D1E1B; text-decoration: none;">
-                        01 78 90 09 90
-                    </a>
-                    ou par mail à
-                    <a class="hover-text-green" href="mailto:relation_client@chapitre.com" target="_blank"
-                        style="color: #1D1E1B; text-decoration: none;">
-                        relation_client@chapitre.com
-                    </a>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" align="center"
-                style="height: 50px;color:white; padding: 0px 0 20px 0; background-color: #fff;"
-                class="faq-button faq__background">
-                <div class="faq__background">
-                    <a class="faq__background" href="https://reprise.secondelecture.com/app/faq" style="text-align: center; display: inline-block;
-font-size: 20px; font-weight: 900; color: #fff; text-decoration: none;">
-                        <p class="faq__background" style=" font-weight: 800; text-align: center; font-size: large; ">
-                            <span style="background-color: #379489; padding: 8px;">
-                                <span class="faq__background--mark"
-                                    style="display: inline-block; border: 2px solid; color: #fff; border-radius: 50%; font-weight: 700; font-size: 14px; text-align: center; width: 16px; height: 16px; line-height: 16px;">?</span>
-                                &nbsp;F.A.Q</span>
-                        </p>
-                    </a>
-                </div>
-            </td>
-        </tr>
-    </table>
-
-    <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center"
-        style="width: 100%; padding-top: 30px;">
-        <tbody>
-            <tr>
-                <td style="text-align: center;">
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="https://reprise.secondelecture.com/disclaimer" target="_blank"
-                                        style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: medium; text-decoration: underline; padding-right: 15px;">
-                                        Mentions légales
-                                    </a>
-                                    <a href="https://reprise.secondelecture.com/cgua" target="_blank"
-                                        style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: medium; text-decoration: underline; padding-right: 15px;">
-                                        CGUA
-                                    </a>
-                                    <a href="https://reprise.secondelecture.com/terms" class="customButton"
-                                        target="_blank"
-                                        style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: medium; text-decoration: underline;">
-                                        Données personnelles
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="disclaimer" border="0" cellpadding="0" cellspacing="0" role="presentation">
-        <tr>
-            <td style="padding: 20px 20px;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0"
+                    style="border-spacing: 0; margin: 20px 0;border-collapse: separate; width: 100%;">
                     <tr>
+                        <td width="20%" style="text-align: center;">&nbsp;</td>
                         <td>
-                            <p
-                                style="margin: 0; color: #707070; font-size: small; line-height: 16px; font-family: 'Montserrat', Arial, sans-serif;">
-                                NOSOLI 72 est responsable de traitement du site de revente de livres
-                                d’occasion. La base légale de ce traitement est le respect d’une
-                                obligation
-                                légale. Vos données sont indispensables à la réalisation du traitement
-                                et
-                                sont destinées aux personnes habilitées au sein de NOSOLI 72, ses
-                                partenaires et sous-traitants, elles seront conservées pendant une durée
-                                de
-                                10 ans à partir de leur collecte.
-                            </p>
-                            <p
-                                style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: small; line-height: 16px;">
-                                En application de la loi Informatique et
-                                Libertés n°78-17 du 06/01/1978 modifiée et le Règlement Européen Général
-                                2016/679 du 27/04/2016 sur la protection des données, vous disposez d’un
-                                droit d’opposition, d’accès, de rectification, d’effacement (droit à
-                                l’oubli) et de limitation sur l’ensemble des données vous concernant.
-                                Vous
-                                pouvez exercer vos droits par courriel à l’adresse dpo@nosoli.fr ou par
-                                courrier à l’adresse FD SERVICES - DPO - 191 rue des Cinq Voies, 59200
-                                TOURCOING. Vous disposez également du droit d’introduire une réclamation
-                                auprès de la CNIL.
-                            </p>
-                            <p
-                                style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: small; line-height: 16px;">
-                                Pour plus d’information sur la signification de vos
-                                droits et sur l’introduction d’une réclamation, vous pouvez consulter le
-                                site de la CNIL.
-                            </p>
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="width: 100%; border: 2px solid #379489;">
+                                <tr>
+                                    <td
+                                        style="vertical-align: middle; text-align: center; background-color: #fff;">
+                                        <img src="https://i.ibb.co/k4wGrDh/Code-barres-svg.png" class="barcode"
+                                            style="height: 90px; width: 222px; object-fit: contain; background-color: #fff; padding: 10px;"
+                                            width="222" height="90" alt="Code-barres">
+                                        <p
+                                            style="font-size: medium; display: block; text-align: center; padding: 10px; margin: 0; color: black;">
+                                            {{cart.number}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="20%" style="text-align: center;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="20%" style="text-align: center;">&nbsp;</td>
+                        <td
+                            style="vertical-align: middle; background-color: #379489; color: white; width: 50%; text-align: center;">
+                            <h2
+                                style="font-weight: 650; margin: 0; padding: 20px; font-family: 'Montserrat', Arial, sans-serif;">
+                                Offre de reprise valable jusqu'au
+                                {{end.validity.date}} <span
+                                    style="font-style: italic; font-size: medium; font-weight: 300;">(1)</span>
+                            </h2>
+                        </td>
+                        <td width="20%" style="text-align: center;">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- Barcode insert -->
+
+
+        <!-- conditions -->
+        <tr>
+            <td>
+                <table class="conditions__container"
+                    style="width: 100%;font-weight: 400; font-size: small; line-height: 18px; font-style: italic; color: #1D1E1B; margin: 20px 0;">
+                    <tr>
+                        <td style="vertical-align: top; width: 20px;">
+                            (1)</td>
+                        <td>
+                            <ul style="list-style-type: circle; margin: 0; padding-left: 20px;">
+                                <li>Le Bon
+                                    d'achat,
+                                    dont la
+                                    valeur est
+                                    fixée
+                                    automatiquement
+                                    par
+                                    l'application,
+                                    est
+                                    utilisable
+                                    en une seule
+                                    fois dans la
+                                    librairie
+                                    dans
+                                    laquelle la
+                                    reprise de
+                                    livres
+                                    d'occasion a
+                                    été
+                                    effectuée,
+                                    pendant 2
+                                    mois à
+                                    compter de
+                                    son
+                                    activation,
+                                    en France
+                                    Métropolitaine
+                                    uniquement.
+                                </li>
+                                <li>Le Bon
+                                    d'achat sera
+                                    utilisable à
+                                    partir d'un
+                                    minimum
+                                    d'achat
+                                    correspondant
+                                    à la valeur
+                                    du Bon
+                                    d'achat.
+                                </li>
+                                <li>Le Bon
+                                    d'achat
+                                    n'est pas
+                                    sécable, ni
+                                    remboursable,
+                                    ni
+                                    revendable,
+                                    ni
+                                    échangeable
+                                    contre des
+                                    espèces.
+                                </li>
+                                <li>Le bon de
+                                    reprise pour
+                                    procéder au
+                                    dépôt des
+                                    livres en
+                                    point de
+                                    vente du
+                                    Partenaire
+                                    est valable
+                                    pour une
+                                    durée de 7
+                                    jours
+                                    calendaires.
+                                    Passé ce
+                                    délai,
+                                    l’Offre de
+                                    reprise ne
+                                    sera plus
+                                    valable et
+                                    le Vendeur
+                                    devra
+                                    recommencer
+                                    la
+                                    préparation
+                                    de son
+                                    panier de
+                                    Reprise.
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
-    </table>
-    </div>
-    </td>
-    </tr>
-    </table>
+        <!-- conditions -->
 
 
+        <!-- "Comment emballer vos livres" + F.A.Q -->
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="explanations"
+                    style="background-color: #F3F3F3; width: 100%;">
+                    <tr class="explanations-help">
+                        <td colspan="2" align="center" style="color: #1D1E1B;">
+                            <h2 style="font-family: 'Montserrat', Helvetica, serif; margin:20px; font-weight: 800;
+										color: #379489; text-align: center">
+                                Comment emballer vos livres&nbsp;?&nbsp;*
+                            </h2>
+                        </td>
+                    </tr>
+
+                    <tr class="explanations-elements">
+                        <td width="188" align="center" style="padding:32px 15px 40px 15px;">
+                            <img src="https://www.images-chapitre.com/babel/images/reprise.png"
+                                alt="Emballez vos livres"
+                                style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
+                                width="88" height="88" border="0">
+                            <h4 style="text-align: center; max-width: 90%; margin: auto;">
+                                1 reprise = 1 colis<br><span style="color: red !important">20 livres
+                                    max. par
+                                    colis
+                                </span>
+                            </h4>
+                        </td>
+                        <td width="188" align="center" style="padding:32px 15px 40px 15px;">
+                            <img src="https://www.images-chapitre.com/babel/images/carton.png" alt="Carton adapté"
+                                style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
+                                width="88" height="88" border="0">
+                            <h4 style="text-align: center; max-width: 90%; margin: auto;">
+                                Protégez bien vos livres dans un colis solide et
+                                adapté
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="188" align="center" style="padding:32px 15px 40px 15px;">
+                            <img src="https://www.images-chapitre.com/babel/images/adhesif.png" alt="Ruban adhésif"
+                                style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
+                                width="88" height="88" border="0">
+                            <h4 style="max-width: 90%; margin: auto;">
+                                Fermez le colis avec du ruban adhésif
+                            </h4>
+                        </td>
+                        <td width="188" align="center" style="padding:32px 15px 40px 15px;">
+                            <img src="https://www.images-chapitre.com/babel/images/colisf.png" alt="Colis fermé"
+                                style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
+                                width="88" height="88" border="0">
+                            <h4 style="text-align: center; max-width: 90%; margin: auto;">
+                                Transportez votre colis dans la librairie de votre
+                                choix
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr class="explanations-elements">
+                        <td width="188" align="center" style="padding:32px 15px 40px 15px;">
+                            <img src="https://www.images-chapitre.com/babel/images/telcab.png"
+                                alt="Code-barres sur téléphone"
+                                style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
+                                width="88" height="88" border="0">
+                            <h4 style="text-align: center; max-width: 90%; margin: auto; ">
+                                Présentez votre code-barres de reprise à un libraire
+                            </h4>
+                        </td>
+                        <td width="188" align="center" style="padding:32px 15px 40px 15px;">
+                            <img src="https://www.images-chapitre.com/babel/images/ba.png" alt="bon d'achat"
+                                style="text-align: center; width: 88px; height: 88px; object-fit: contain; border:0;"
+                                width="88" height="88" border="0">
+                            <h4 style="max-width: 90%; margin: auto; ">
+                                Recevez votre bon d’achat et faites-vous plaisir !
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr class="explanations-help">
+                        <td colspan="2" style="color: #1D1E1B;">
+                            <h5 style="color: #707070; margin: 20px; font-weight: 400;">
+                                *&nbsp;Veuillez noter que le libraire se réserve le
+                                droit de refuser tout colis dont
+                                l'emballage ne garantit pas une protection
+                                suffisante des livres expédiés.
+                            </h5>
+                        </td>
+                    </tr>
+
+                    <!-- F.A.Q -->
+                    <tr class="explanations-help faq" style="background-color: #fff;">
+                        <td colspan="3" align="center" style="padding-top: 30px; padding-bottom:0; color: #1D1E1B;">
+                            <h2
+                                style="font-family: 'Montserrat', Helvetica, serif; margin: 0 0 10px 0; font-weight: 800; color: #379489; text-align: center">
+                                Besoin d'aide ?
+                            </h2>
+                            <p class="contact" style="line-height: 22px; text-align: center; padding: 0 0 10px 0;">
+                                Contactez-nous du lundi au vendredi de 9h30 à 12h30&nbsp;: <br>
+                                Par téléphone au
+                                <a class="hover-text-green" href="tel:+33178900990" target="_blank"
+                                    style="color: #1D1E1B; text-decoration: none;">
+                                    01 78 90 09 90
+                                </a>
+                                ou par mail à
+                                <a class="hover-text-green" href="mailto:relation_client@chapitre.com" target="_blank"
+                                    style="color: #1D1E1B; text-decoration: none;">
+                                    relation_client@chapitre.com
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center"
+                            style="height: 50px;color:white; padding: 0px 0 20px 0; background-color: #fff;"
+                            class="faq-button faq__background">
+                            <div class="faq__background">
+                                <a class="faq__background" href="https://reprise.secondelecture.com/app/faq"
+                                    style="text-align: center; display: inline-block; font-size: 20px; font-weight: 900; color: #fff; text-decoration: none;">
+                                    <p class="faq__background"
+                                        style=" font-weight: 800; text-align: center; font-size: large; ">
+                                        <span style="background-color: #379489; padding: 8px;">
+                                            <span class="faq__background--mark"
+                                                style="display: inline-block; border: 2px solid; color: #fff; border-radius: 50%; font-weight: 700; font-size: 14px; text-align: center; width: 16px; height: 16px; line-height: 16px;">?</span>
+                                            &nbsp;F.A.Q</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+        <!-- socialNetworks -->
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="socialNetworks" align="center">
+                    <tbody>
+                        <tr align="center" style="width: 100%;">
+                            <td align="center" width="120" style="width: 100%;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tbody>
+                                        <tr align="center">
+                                            <td>
+                                                <a href="https://reprise.secondelecture.com/disclaimer" target="_blank"
+                                                    style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
+                                                    Mentions&nbsp;légales
+                                                </a>
+                                                <span class="hidden">&nbsp;</span>
+                                                <a href="https://reprise.secondelecture.com/cgua" target="_blank"
+                                                    style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline; padding-right: 15px;">
+                                                    CGUA
+                                                </a>
+                                                <span class="hidden">&nbsp;</span>
+                                                <a href="https://reprise.secondelecture.com/terms" class="customButton"
+                                                    target="_blank"
+                                                    style="font-family: 'Montserrat', Arial, sans-serif; color: #3F6AF7; font-size: 12px; text-decoration: underline;">
+                                                    Données&nbsp;personnelles
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <!-- socialNetworks -->
+
+
+        <!-- disclaimer -->
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                        <td class="disclaimer" style="padding: 32px 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td>
+                                        <p
+                                            style="margin: 0; color: #707070; font-size: 14px; line-height: 16px; font-family: 'Montserrat', Arial, sans-serif;">
+                                            NOSOLI 72 est responsable de traitement
+                                            du site de revente de livres
+                                            d’occasion. La base légale de ce
+                                            traitement est le respect d’une
+                                            obligation
+                                            légale. Vos données sont indispensables
+                                            à la réalisation du traitement
+                                            et
+                                            sont destinées aux personnes habilitées
+                                            au sein de NOSOLI 72, ses
+                                            partenaires et sous-traitants, elles
+                                            seront conservées pendant une durée
+                                            de
+                                            10 ans à partir de leur collecte.
+                                        </p>
+                                        <p
+                                            style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: 14px; line-height: 16px;">
+                                            En application de la loi Informatique et
+                                            Libertés n°78-17 du 06/01/1978 modifiée
+                                            et le Règlement Européen Général
+                                            2016/679 du 27/04/2016 sur la protection
+                                            des données, vous disposez d’un
+                                            droit d’opposition, d’accès, de
+                                            rectification, d’effacement (droit à
+                                            l’oubli) et de limitation sur l’ensemble
+                                            des données vous concernant.
+                                            Vous
+                                            pouvez exercer vos droits par courriel à
+                                            l’adresse dpo@nosoli.fr ou par
+                                            courrier à l’adresse FD SERVICES - DPO -
+                                            191 rue des Cinq Voies, 59200
+                                            TOURCOING. Vous disposez également du
+                                            droit d’introduire une réclamation
+                                            auprès de la CNIL.
+                                        </p>
+                                        <p
+                                            style="margin: 16px 0 0 0; font-family: 'Montserrat', Arial, sans-serif; color: #707070; font-size: 14px; line-height: 16px;">
+                                            Pour plus d’information sur la
+                                            signification de vos
+                                            droits et sur l’introduction d’une
+                                            réclamation, vous pouvez consulter le
+                                            site de la CNIL.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- disclaimer -->
+
+    </table>
 </body>
 
 </html>
