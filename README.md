@@ -44,3 +44,6 @@ afficher la source html
 @RenderBody()
 
 **Valentine** : Disclaimers.
+
+Il y a un sujet sur la taille des fonts, attention. Tout est en small.
+Et sur le dédoublement des titres.

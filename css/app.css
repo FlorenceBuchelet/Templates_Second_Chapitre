@@ -19,6 +19,7 @@
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-Regular.ttf");
 }
+
 /* End register Fonts */
 
 body {
@@ -50,6 +51,7 @@ body {
     position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    font-family: 'Montserrat-ExtraBold';
 }
 
 .logo {
@@ -75,9 +77,14 @@ body {
     background-color: #00211E;
 }
 
-    .title h1 {
-        margin-left: 2rem;
-    }
+.title h1 {
+    margin-left: 2rem;
+}
+
+.subtitle {
+    color: #379489;
+    font-family: 'Montserrat-ExtraBold';
+}
 
 /* Color */
 .color-danger {
@@ -101,10 +108,12 @@ body {
     flex-direction: row;
     gap: 1rem;
     margin-bottom: 1.5rem;
+
     & svg {
         width: 1.1rem;
         height: 1.1rem;
     }
+
     & ul {
         margin-block: 0.5rem;
     }
@@ -118,13 +127,13 @@ body {
     margin-left: -5vh;
 }
 
-    .rule-list li {
-        list-style: none;
-    }
+.rule-list li {
+    list-style: none;
+}
 
-        .rule-list li::before {
-            content: "- ";
-        }
+.rule-list li::before {
+    content: "- ";
+}
 
 
 /* ---------------------------------------- CGUA ---------------------------------------- */
@@ -164,16 +173,16 @@ body {
     justify-content: space-between;
 }
 
-    .dateMEP svg {
-        transform-origin: center;
-        padding-top: 1vh;
-        fill: #379489;
-        transform: rotate(270deg);
-    }
+.dateMEP svg {
+    transform-origin: center;
+    padding-top: 1vh;
+    fill: #379489;
+    transform: rotate(270deg);
+}
 
-    .dateMEP.selected svg {
-        padding-top: 1vh;
-    }
+.dateMEP.selected svg {
+    padding-top: 1vh;
+}
 
 /* -- Content -- */
 .cgua-content {
@@ -200,9 +209,9 @@ body {
     font-size: medium;
 }
 
-    .article-head h4 {
-        padding-left: 1vh;
-    }
+.article-head h4 {
+    padding-left: 1vh;
+}
 
 .article-content {
     display: none;
@@ -239,6 +248,7 @@ body {
     padding: .3vh 4vh;
     font-size: medium;
     color: #379489;
+    font-family: 'Montserrat-ExtraBold';
 }
 
 /* Card whit bg gray */
@@ -264,13 +274,19 @@ body {
 .card-image img {
     margin: 0;
     height: 8vh;
+    max-height: 30px;
+    max-width: 30px;
     width: 8vh;
+    margin: 1vh;
 }
 
-a, a:focus, a:active {
+a,
+a:focus,
+a:active {
     outline: none;
     text-decoration: none;
 }
+
 /* Group Card Image + Button */
 .card-info {
     align-items: center;
@@ -281,6 +297,7 @@ a, a:focus, a:active {
 .card-text {
     padding-bottom: 1vh;
 }
+
 /* ---------------------------------------- FAQ ---------------------------------------- */
 
 .faq-item {
@@ -320,8 +337,9 @@ a, a:focus, a:active {
 
 .faq-title {
     align-self: flex-start;
-/*     font-family: "MerriweatherBold", sans-serif;
- */}
+    /*     font-family: "MerriweatherBold", sans-serif;
+ */
+}
 
 .faq-arrow {
     align-self: flex-end;
@@ -337,13 +355,14 @@ a, a:focus, a:active {
 
 .ml-content {
     margin: 2rem;
+    font-size: small;
 }
 
 .title2 {
     color: #379489;
     font-weight: bold;
-/*     font-family: "MerriweatherBold", sans-serif;
- */}
+}
+
 /* Information section */
 
 .informations {
@@ -351,20 +370,22 @@ a, a:focus, a:active {
     display: inline-block;
     padding-bottom: -1.5rem;
     margin-top: 1rem;
+    font-size: small;
 }
 
-    .informations p {
-        padding-top: 0;
-        margin-bottom: -10px;
-    }
+.informations p {
+    padding-top: 0;
+    margin-bottom: -10px;
+}
 
 .type {
-/*     font-family: "MerriweatherBold", sans-serif;
- */}
+    font-family: 'Montserrat-ExtraBold';
+}
 
-    .type::after {
-        content: " : ";
-    }
+.type::after {
+    content: " : ";
+}
+
 /* ---------------------------------------- Partenaire ---------------------------------------- */
 
 /* Presentation */
@@ -377,15 +398,15 @@ a, a:focus, a:active {
     display: block;
 }
 
-    .presentation p {
-        align-self: baseline;
-    }
+.presentation p {
+    align-self: baseline;
+}
 
-    .presentation .logo-part {
-        float: left;
-        padding-right: 2vh;
-        width: 20vh;
-    }
+.presentation .logo-part {
+    float: left;
+    padding-right: 2vh;
+    width: 20vh;
+}
 
 .paraphe {
     margin: 2vh 0;
