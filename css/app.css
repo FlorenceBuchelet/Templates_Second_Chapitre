@@ -269,7 +269,7 @@ body {
 /* Title */
 .contact-title {
     padding: .3vh 4vh;
-    font-size: medium;
+    font-size: small;
     color: #379489;
     font-family: 'Montserrat-ExtraBold';
 }
@@ -291,6 +291,7 @@ body {
     background-color: #379489;
     color: white;
     padding: .7vh 2vh;
+    font-size: small;
 }
 
 /* Card img */
@@ -333,6 +334,7 @@ a:active {
     justify-content: space-between;
     border-bottom: 1px solid gray;
     color: #379489;
+    font-family: 'Montserrat-ExtraBold';
 }
 
 .faq-responses {
