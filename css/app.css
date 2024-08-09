@@ -54,6 +54,14 @@ body {
     font-family: 'Montserrat-ExtraBold';
 }
 
+.horizontal-center {
+    display: flex;
+    flex-direction: column;
+    & a {
+        margin: auto;
+    }
+}
+
 .logo {
     padding-top: 3rem;
     padding-left: 3rem;
@@ -93,6 +101,21 @@ body {
 
 .color-success {
     fill: #379489;
+}
+
+/* Button */
+
+.button {
+    all: unset;
+    font-family: 'Montserrat-ExtraBold';
+    color: #fff;
+    background-color: #379489;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-block-start: 1rem;
 }
 
 /* ---------------------------------------- CDR ---------------------------------------- */
@@ -412,6 +435,55 @@ a:active {
     margin: 2vh 0;
     margin-bottom: 1.3rem;
     display: block;
+}
+
+/* ---------------------------------- Password reinitialization ---------------------------------- */
+
+.password__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & input {
+        font-size: medium;
+        border-radius: 20px;
+        border: 1px solid #B3B3B4;
+        padding: 0.5rem 1rem;
+
+        &::placeholder {
+            color: #B3B3B4;
+        }
+    }
+}
+
+/* ------------------------------------ Requires validation ------------------------------------ */
+
+.highlight {
+    font-weight: bold;
+    color: #379489;
+}
+
+/* ----------------------------------------- Partners ----------------------------------------- */
+
+.partners {
+    display: flex;
+    gap: 4%;
+    & p {
+        margin: 0;
+        margin-block-end: 1em;
+    }
+}
+
+.partners__logo {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+}
+
+/* ----------------------------------------- Partners ----------------------------------------- */
+
+.terms {
+    font-size: small;
 }
 
 /* ---------------------------------------- MEDIA Query ---------------------------------------- */

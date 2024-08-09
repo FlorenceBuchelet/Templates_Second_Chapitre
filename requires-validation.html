@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,27 +12,39 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <header class="header-heading">
         <img class="logo" src="/img/logo_2lec-1.svg" alt="Logo Second Chapitre">
     </header>
     <main class="main-padding">
         <section class="title">
-            <h1 class="vertical-center">Template</h1>
+            <h1 class="vertical-center">Validation requise</h1>
         </section>
-        
-<section class="part-content">
 
-    <div class="presentation">
-        <p>Template</p>
-    </div>
+        <section class="ml-content">
 
-    <div class="paraphe">
-        <p>Template</p>
-    </div>
+            <div class="paraphe">
+                <p>Merci pour votre inscription.</p>
+            </div>
 
-</section>
+            <div class="paraphe">
+                <p>Nous vous informons que nous avons envoyé un courriel à l’adresse
+                    suivante <span class="highlight">{{ user.email }}</span> pour demander la confirmation de la création de votre compte.</p>
+            </div>
+
+            <div class="paraphe">
+                <p>Veuillez
+                    cliquer sur le lien pour valider votre adresse email et profiter pleinement de l’application Second
+                    Chapitre.</p>
+            </div>
+            <div class="paraphe">
+                <p>Vous pouvez demander l’envoi d’un nouveau mail de confirmation <a href="/">en cliquant ici.</a></p>
+            </div>
+
+        </section>
     </main>
-    
+
 </body>
+
 </html>
