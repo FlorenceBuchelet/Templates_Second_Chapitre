@@ -26,6 +26,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Monserrat, sans-serif;
+    font-size: small;
 }
 
 
@@ -163,7 +164,7 @@ body {
 
 /* -- Dates -- */
 .dateMEP.selected .date-selector {
-    color: #379489;
+    color: #707070;
 }
 
 .date {
@@ -171,17 +172,22 @@ body {
     flex-direction: column;
     padding: 2vh;
     background-color: #F3F3F3;
+    gap: 1rem;
 }
 
 .date-selector {
+    color: #379489;
+    font-family: 'Montserrat-ExtraBold';
     padding: 0;
     margin: 0;
     padding-left: 4vh;
 }
 
 .date-option {
-    padding-left: 2vh;
+    margin-left: 3vh;
     cursor: pointer;
+    font-family: 'Montserrat-ExtraBold';
+    color: #707070;
 }
 
 #date-option:hover {
@@ -214,6 +220,9 @@ body {
     border-top: 1px solid black;
     margin: 2rem;
     margin-top: 1rem;
+    & li {
+        margin-inline-start: 1rem;
+    }
 }
 
 /* Article */
@@ -229,7 +238,6 @@ body {
     color: #379489;
     font-weight: bolder;
     align-items: center;
-    font-size: medium;
 }
 
 .article-head h4 {
@@ -343,7 +351,6 @@ a:active {
 
 .faq.active .faq-responses {
     display: contents;
-    font-size: small;
 }
 
 .faq.active .chevron {
@@ -380,7 +387,6 @@ a:active {
 
 .ml-content {
     margin: 2rem;
-    font-size: small;
 }
 
 .title2 {
@@ -388,14 +394,13 @@ a:active {
     font-weight: bold;
 }
 
-/* Information section */
+/* Informations section */
 
 .informations {
     position: relative;
     display: inline-block;
     padding-bottom: -1.5rem;
     margin-top: 1rem;
-    font-size: small;
 }
 
 .informations p {
@@ -411,13 +416,8 @@ a:active {
     content: " : ";
 }
 
-/* ---------------------------------------- Partenaire ---------------------------------------- */
 
 /* Presentation */
-
-.part-content {
-    margin: 2vh;
-}
 
 .presentation {
     display: block;
@@ -425,12 +425,6 @@ a:active {
 
 .presentation p {
     align-self: baseline;
-}
-
-.presentation .logo-part {
-    float: left;
-    padding-right: 2vh;
-    width: 20vh;
 }
 
 .paraphe {
@@ -455,7 +449,21 @@ a:active {
         &::placeholder {
             color: #B3B3B4;
         }
+        &:active {
+            border: 2px solid lime;
+        }
     }
+}
+
+.password__label--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /* ------------------------------------ Requires validation ------------------------------------ */
@@ -480,12 +488,6 @@ a:active {
     max-width: 100px;
     max-height: 100px;
     border-radius: 5px;
-}
-
-/* ----------------------------------------- Partners ----------------------------------------- */
-
-.terms {
-    font-size: small;
 }
 
 /* ---------------------------------------- MEDIA Query ---------------------------------------- */
