@@ -36,7 +36,7 @@
 
 Le dossier `[finished]pages` contient les extraits de code qui ont vocation à trouver leur place dans le `@RenderBody()`, sans les headers etc.
 
-Ne pas oublier de récupérer le CSS dans `app.css`.
+Ne pas oublier de récupérer le CSS dans `css/app.css`.
 
 ## CGUA
 
