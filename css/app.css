@@ -369,8 +369,6 @@ a:active {
 
 .faq-title {
     align-self: flex-start;
-    /*     font-family: "MerriweatherBold", sans-serif;
- */
 }
 
 .faq-arrow {
@@ -445,12 +443,11 @@ a:active {
         border-radius: 20px;
         border: 1px solid #B3B3B4;
         padding: 0.5rem 1rem;
+        margin: auto;
+        font-family: Montserrat, sans-serif;
 
         &::placeholder {
-            color: #B3B3B4;
-        }
-        &:active {
-            border: 2px solid lime;
+            color: #8b8b8b;
         }
     }
 }

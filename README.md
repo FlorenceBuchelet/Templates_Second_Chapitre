@@ -15,30 +15,30 @@
 - Images en blanc pour le dark mode : j'ai les assets mais pas de solution pour les limiter au dark mode.
 
 ## cart_validation.html & cart_validation_dark.html
-- **store.name**
-- **store.street**
-- **store.zipcode**
-- **store.city**
-- **cart_number** (x3)
+- {{store.name}}
+- {{store.street}}
+- {{store.zipcode}}
+- {{store.city}}
+- {{cart_number}} (x3)
 - boucle {% for book in books %} ... {% endfor %} 
-- **book.title**
-- **book.price**
-- **total_price** total du cart
-- **end_validity_date** fin de validité de la reprise
+- {{book.title}}
+- {{book.price}}
+- {{total_price}} total du cart
+- {{end_validity_date}} fin de validité de la reprise
 
 # Email_verify.html
-- ** verification_link ** lien vers la confirmation d'email
+- {{ verification_link }} lien vers la confirmation d'email
 
 # order_validation.html
-- **order_number**
-- **store.name**
-- **voucher.expired_at**
-- **voucher.code**
-- **voucher.amount** 
-- **cart_number**
+- {{order_number}}
+- {{store.name}}
+- {{voucher.expired_at}}
+- {{voucher.code}}
+- {{voucher.amount}} 
+- {{cart_number}}
 
 # forgot_password.html
-- ** reset_password_link **
+- {{ reset_password_link }}
 
 afficher la source html
 @RenderBody()
@@ -46,4 +46,3 @@ afficher la source html
 **Valentine** : Disclaimers.
 
 Il y a un sujet sur la taille des fonts, attention. Tout est en small.
-Et sur le dédoublement des titres.

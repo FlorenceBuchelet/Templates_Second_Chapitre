@@ -17,7 +17,10 @@
     <header class="header-heading">
         <img class="logo" src="/img/logo_2lec-1.svg" alt="Logo Second Chapitre">
     </header>
+
+
     <main class="main-padding">
+        <!-- PAGE START -->
         <section class="title">
             <h1 class="vertical-center">Conditions Générales d'Utilisation et d'Achat</h1>
         </section>
@@ -44,6 +47,7 @@
             </div>
             <!-- End content -->
         </section>
+        <!-- PAGE END -->
 
 
     </main>
@@ -84,7 +88,7 @@
             {
                 id: 1,
                 name: "CGUA en date du 16/10/2023",
-                selected: true,
+                selected: false,
                 articles: [
                     {
                         id: 1,
@@ -180,7 +184,7 @@
             }, {
                 id: 2,
                 name: "CGUA en date du 12/08/2024",
-                selected: false,
+                selected: true,
                 articles: [
                     {
                         id: 1,
@@ -276,11 +280,15 @@
             }
         ];
 
+
+        // Get current date p
+        const currentDate = document.getElementById('cgua-current-date'); // FIXME: edited JS
+
         // Store selected information
         let selected = null;
 
         // Get parent element dom
-        const dateMenu = document.getElementById('date-menu');
+        const selector = document.getElementById('date-selector');
 
         // Template Date
         let optionsWrapper = document.getElementById('date-options-wrapper')
@@ -295,9 +303,6 @@
         let articlesDiv = document.getElementById('articles');
 
         let dropDownDate = document.querySelector('.dateMEP');
-
-        // Get current date p
-        const currentDate = document.getElementById('cgua-current-date');
 
 
         // Initialisation all functions
@@ -328,6 +333,8 @@
             } catch {
                 return false;
             }
+
+
         }
 
         // Generate a dom element from information
@@ -343,6 +350,7 @@
             optionDiv.appendChild(p);
 
             // Ajout d'un listener au click
+            // TODO: Hide all options when an option is clicked
             optionDiv.addEventListener("click", e => selectInformation(information));
             optionsWrapper.appendChild(optionDiv);
         }
@@ -355,7 +363,7 @@
 
         // Selection information function
         function selectInformation(information) {
-            // console.log(information)
+            console.log(information)
             clearSelection();
             selected = information;
             information.selected = true;
@@ -366,8 +374,8 @@
 
         // Function clear all childs
         function clearSelector() {
-            while (dateMenu.firstChild) {
-                dateMenu.removeChild(dateMenu.lastChild);
+            while (selector.firstChild) {
+                selector.removeChild(selector.lastChild);
             }
         }
 
@@ -380,7 +388,7 @@
             });
         }
 
-        // Function to generate articles
+        // Function for generate articles
         function generateArticle(info) {
 
             let divArticle = document.createElement('DIV');
@@ -418,7 +426,7 @@
             articlesDiv.innerHTML = "";
             informations.forEach((info) => {
                 if (info.selected) {
-                    currentDate.textContent = info.name;
+                    currentDate.textContent = info.name; // FIXME: edited JS
                     info.articles.map((article) => {
                         if (article.type == "text") {
                             contentText.innerHTML = article.content;
@@ -431,11 +439,15 @@
                 }
             })
             LoadArticles();
+
+
+            console.log(selected);
         }
 
         // All FAQ
         function LoadArticles() {
             let articles = document.querySelectorAll('.article');
+            console.log("articles", articles);
             articles.forEach((event) => {
                 // Click listener
                 event.addEventListener('click', () => {
@@ -456,6 +468,8 @@
         // Initialize all
         init();
 
+        // CHECK: All code is launched ?
+        console.log('inited')
     </script>
 
 </body>
