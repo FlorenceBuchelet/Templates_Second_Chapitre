@@ -39,3 +39,5 @@
 
 Attention aux deux lignes de JS éditées dans le script. Elles sont marquées par des `FIXME: edited JS`.
 J'ai également mis à jour la doc du tableau d'informations.
+
+Le dossier `[finished]pages` contient les extraits de code qui ont vocation à trouver leur place dans le `@RenderBody()`, sans les headers ...etc.
