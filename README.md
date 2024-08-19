@@ -41,6 +41,6 @@ Ne pas oublier de récupérer le CSS dans `css/app.css`.
 Attention aux deux lignes de JS éditées dans le script. Elles sont marquées par des `FIXME: edited JS`.
 J'ai également mis à jour la doc du tableau d'informations.
 
-Le tableau en lui-même avec la dernière mise à jour des CGUA (et seule version actuellement en ligne) est disponible dans `[finished]pages>cgua.js`.
+Le tableau en lui-même avec la dernière mise à jour des CGUA (et seule version actuellement mise en page) est disponible dans `[finished]pages>cgua.js`.
 
 Les strings d'une seule ligne ont été remplacées par des strings multi-lignes pour plus de lisibilité. Le HTML a été entièrement revu par souci d'accéssibilité et de lisibilité.
