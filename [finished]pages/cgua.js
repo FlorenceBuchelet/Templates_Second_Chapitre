@@ -393,7 +393,7 @@ const informations = [
                 BP20015<br>
                 75362 Paris CEDEX 8</blockquote>
 
-                <p>Après démarche préalable écrite des consommateurs vis-à-vis du professionnel, le Service du Médiateur peut être saisi pour tout litige de consommation dont le règlement n’aurait pas abouti. Pour connaître les modalités de saisine du Médiateur, cliquer ici.</p>
+                <p>Après démarche préalable écrite des consommateurs vis-à-vis du professionnel, le Service du Médiateur peut être saisi pour tout litige de consommation dont le règlement n’aurait pas abouti.</p>
 
                 <p>Au niveau national, le Vendeur peut également formuler sa déclaration en se rendant sur le site suivant&nbsp;: <a href="https://signal.conso.gouv.fr/" target="_blank">https://signal.conso.gouv.fr/</a></p>
 
