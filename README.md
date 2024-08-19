@@ -64,4 +64,3 @@ Pages :
 Mails : 
 - Encadrés avec les codes-barre (x2, colis reçu, confirmation de reprise)
 
-
