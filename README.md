@@ -32,6 +32,14 @@
 
 # Pages
 
+Liens vers les pages Seconde Lecture :
+- https://sechapwb.secondelecture.com/app/cgua
+- https://sechapwb.secondelecture.com/app/terms
+- https://sechapwb.secondelecture.com/app/faq
+- https://sechapwb.secondelecture.com/app/legal-notice
+- https://sechapwb.secondelecture.com/app/contact
+- https://sechapwb.secondelecture.com/app/partners
+
 Le dossier `[finished]pages` contient les extraits de code qui ont vocation à trouver leur place dans le `@RenderBody()`, sans les headers etc.
 
 Ne pas oublier de récupérer le CSS dans `css/app.css`.
@@ -44,3 +52,16 @@ J'ai également mis à jour la doc du tableau d'informations.
 Le tableau en lui-même avec la dernière mise à jour des CGUA (et seule version actuellement mise en page) est disponible dans `[finished]pages>cgua.js`.
 
 Les strings d'une seule ligne ont été remplacées par des strings multi-lignes pour plus de lisibilité. Le HTML a été entièrement revu par souci d'accéssibilité et de lisibilité.
+
+
+
+# TODO
+Pages : 
+- gestion d'erreur sur le form
+- input email dans le form plus long
+- gestion d'erreur inconnue dans un `<p>`
+
+Mails : 
+- Encadrés avec les codes-barre (x2, colis reçu, confirmation de reprise)
+
+
