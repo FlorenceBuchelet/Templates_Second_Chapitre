@@ -30,8 +30,6 @@
 ### forgot_password.html
 - {{ reset_password_link }}
 
-**Valentine** : Disclaimers.
-
 # Pages
 
 Le dossier `[finished]pages` contient les extraits de code qui ont vocation à trouver leur place dans le `@RenderBody()`, sans les headers etc.
@@ -43,3 +41,6 @@ Ne pas oublier de récupérer le CSS dans `css/app.css`.
 Attention aux deux lignes de JS éditées dans le script. Elles sont marquées par des `FIXME: edited JS`.
 J'ai également mis à jour la doc du tableau d'informations.
 
+Le tableau en lui-même avec la dernière mise à jour des CGUA (et seule version actuellement en ligne) est disponible dans `[finished]pages>cgua.js`.
+
+Les strings d'une seule ligne ont été remplacées par des strings multi-lignes pour plus de lisibilité. Le HTML a été entièrement revu par souci d'accéssibilité et de lisibilité.
