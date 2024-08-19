@@ -1,3 +1,34 @@
+/**
+ * INFORMATIONS:
+ * 
+ * - Les CGUA (informations) sont stockées dans un tableau d'objets.
+ * - Chaque objet représente une version des CGUA.
+ * - Les objets sont rangés dans l'ordre chronologique, du plus ancien au plus récent.
+ * - Chaque objet doit contenir un seul article de type "text" pour la présentation.
+ * - Pour mettre à jour les CGUA, il suffit d'ajouter un nouvel objet à la fin du tableau.
+ *
+ * Structure du tableau 'informations':
+ * 
+ * informations: [
+ *   {
+ *     id: number,              // Identifiant unique de la version des CGUA
+ *     name: string,            // Nom ou date de la version des CGUA (ex: "CGUA en date du 01/01/2024")
+ *     selected: boolean,       // Une seule version selectionnée (true) à la fois, la plus récente
+ *     articles: [              // Tableau d'articles associés à cette version
+ *       {
+ *         id: number,          // Identifiant unique de l'article
+ *         name: string,        // Titre ou nom de l'article
+ *         content: string,     // Contenu textuel de l'article
+ *         type: string,        // Type de l'article ("text" pour l'introduction (1er élément), "article" pour les autres contenus)
+ *       }, 
+ *       {...},                 // Autre article
+ *       {...}
+ *     ]
+ *   },
+ *   {...}                      // Autre version des CGUA
+ * ]
+ */
+
 const informations = [
     {
         id: 1,
