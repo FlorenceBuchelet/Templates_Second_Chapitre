@@ -62,5 +62,4 @@ Pages :
 - gestion d'erreur inconnue dans un `<p>`
 
 Mails : 
-- Encadrés avec les codes-barre (x2, colis reçu, confirmation de reprise)
-
+- Header colis reçu différent des autres
