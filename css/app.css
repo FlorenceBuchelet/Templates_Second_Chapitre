@@ -471,6 +471,10 @@ a:active {
     border: 0;
 }
 
+.input-validation-error {
+    border: 2px solid rgba(239, 68, 68) !important;
+}
+
 /* ------------------------------------ Requires validation ------------------------------------ */
 
 .highlight {
