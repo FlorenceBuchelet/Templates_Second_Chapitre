@@ -58,6 +58,7 @@ body {
 .horizontal-center {
     display: flex;
     flex-direction: column;
+
     & a {
         margin: auto;
     }
@@ -220,6 +221,7 @@ body {
     border-top: 1px solid black;
     margin: 2rem;
     margin-top: 1rem;
+
     & li {
         margin-inline-start: 1rem;
     }
@@ -452,6 +454,12 @@ a:active {
     }
 }
 
+@media(min-width:400px) {
+    .password__form input {
+        min-width: 30ch;
+    }
+}
+
 .password__label--hidden {
     position: absolute;
     width: 1px;
@@ -475,6 +483,7 @@ a:active {
 .partners {
     display: flex;
     gap: 4%;
+
     & p {
         margin: 0;
         margin-block-end: 1em;
@@ -500,4 +509,48 @@ a:active {
         padding-top: 1.5rem;
         width: 7rem;
     }
+}
+
+/* ---------------------------------------- Tailwind classes ---------------------------------------- */
+
+.text-red-500 {
+    --tw-text-opacity: 1;
+    color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+    .sm\:text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+
+.lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .lg\:text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.leading-6 {
+    line-height: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
 }

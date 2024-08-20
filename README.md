@@ -60,6 +60,3 @@ Pages :
 - gestion d'erreur sur le form
 - input email dans le form plus long
 - gestion d'erreur inconnue dans un `<p>`
-
-Mails : 
-- Header colis reçu différent des autres
