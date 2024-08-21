@@ -52,11 +52,3 @@ J'ai également mis à jour la doc du tableau d'informations.
 Le tableau en lui-même avec la dernière mise à jour des CGUA (et seule version actuellement mise en page) est disponible dans `[finished]pages>cgua.js`.
 
 Les strings d'une seule ligne ont été remplacées par des strings multi-lignes pour plus de lisibilité. Le HTML a été entièrement revu par souci d'accéssibilité et de lisibilité.
-
-
-
-# TODO
-Pages : 
-- gestion d'erreur sur le form
-- input email dans le form plus long
-- gestion d'erreur inconnue dans un `<p>`
